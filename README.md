@@ -19,7 +19,7 @@ Built for the AWS "Agents for Humans" hackathon, Everyday track.
 
 <img src="submission/media/flow.gif" width="390" alt="Fairbill running end to end: statement read, price file fetched, flagged row, Decision Card, dispute letter, guard denying a payment attempt.">
 
-*Real screen capture of the live link above, an 18 s time-lapse of a 238 s live run. Statement read, price file fetched live (sha256 shown), flagged row, Decision Card, drafted letter, then "just pay it" and the guard denying pay_bill.*
+*Real screen capture of the live link above, an 18 s time-lapse of a full live run. Statement read, price file fetched live (sha256 shown), flagged row, Decision Card, drafted letter, then "just pay it" and the guard denying pay_bill.*
 
 Not legal advice. See the statement at the bottom of this file.
 
