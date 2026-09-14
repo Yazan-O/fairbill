@@ -1,0 +1,830 @@
+{
+  "bill_id": "bill_02",
+  "today": "2026-09-14",
+  "events": [
+    {
+      "step": "read",
+      "status": "start",
+      "payload": {
+        "bill_id": "bill_02",
+        "photo": "bill_02_photo.jpg"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "read",
+      "status": "ok",
+      "payload": {
+        "bill": {
+          "hospital_name": "Norman Regional Health System",
+          "hospital_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+          "patient_name": "Casey Example",
+          "account_number": "FB-2026-000002",
+          "statement_date": "2026-08-12",
+          "service_date_start": "2026-07-22",
+          "service_date_end": "2026-07-22",
+          "payer": "Self-pay",
+          "visit_type": "Outpatient diagnostics",
+          "clinical_note": null,
+          "lines": [
+            {
+              "line_no": 1,
+              "date_of_service": "2026-07-22",
+              "code": "36415",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Venipuncture",
+              "units": 1.0,
+              "charge": 46.0,
+              "patient_price": 27.6,
+              "provider": null,
+              "network_note": null,
+              "crop": {
+                "page": 0,
+                "x0": 75,
+                "y0": 390,
+                "x1": 1420,
+                "y1": 420
+              }
+            },
+            {
+              "line_no": 2,
+              "date_of_service": "2026-07-22",
+              "code": "84443",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Thyroid Stimulating Hormone",
+              "units": 1.0,
+              "charge": 248.0,
+              "patient_price": 148.8,
+              "provider": null,
+              "network_note": null,
+              "crop": {
+                "page": 0,
+                "x0": 75,
+                "y0": 425,
+                "x1": 1420,
+                "y1": 455
+              }
+            },
+            {
+              "line_no": 3,
+              "date_of_service": "2026-07-22",
+              "code": "83036",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Hemoglobin A1c",
+              "units": 1.0,
+              "charge": 135.0,
+              "patient_price": 81.0,
+              "provider": null,
+              "network_note": null,
+              "crop": {
+                "page": 0,
+                "x0": 75,
+                "y0": 458,
+                "x1": 1420,
+                "y1": 488
+              }
+            },
+            {
+              "line_no": 4,
+              "date_of_service": "2026-07-22",
+              "code": "93005",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "ECG tracing, 12 lead",
+              "units": 1.0,
+              "charge": 409.0,
+              "patient_price": 245.4,
+              "provider": null,
+              "network_note": null,
+              "crop": {
+                "page": 0,
+                "x0": 75,
+                "y0": 491,
+                "x1": 1420,
+                "y1": 521
+              }
+            },
+            {
+              "line_no": 5,
+              "date_of_service": "2026-07-22",
+              "code": "71046",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Chest X-ray, 2 views",
+              "units": 1.0,
+              "charge": 449.0,
+              "patient_price": 449.0,
+              "provider": null,
+              "network_note": null,
+              "crop": {
+                "page": 0,
+                "x0": 75,
+                "y0": 524,
+                "x1": 1420,
+                "y1": 554
+              }
+            }
+          ],
+          "total_charges": 1287.0,
+          "total_adjustments": -335.2,
+          "patient_balance": 951.8,
+          "fictional_label_present": true,
+          "crops": {
+            "hospital_name": {
+              "page": 0,
+              "x0": 75,
+              "y0": 88,
+              "x1": 580,
+              "y1": 130
+            },
+            "patient_name": {
+              "page": 0,
+              "x0": 75,
+              "y0": 195,
+              "x1": 400,
+              "y1": 220
+            },
+            "account_number": {
+              "page": 0,
+              "x0": 620,
+              "y0": 195,
+              "x1": 870,
+              "y1": 220
+            },
+            "statement_date": {
+              "page": 0,
+              "x0": 950,
+              "y0": 195,
+              "x1": 1200,
+              "y1": 220
+            },
+            "service_date_start": {
+              "page": 0,
+              "x0": 620,
+              "y0": 240,
+              "x1": 870,
+              "y1": 265
+            },
+            "payer": {
+              "page": 0,
+              "x0": 950,
+              "y0": 240,
+              "x1": 1150,
+              "y1": 265
+            }
+          }
+        },
+        "notes": []
+      },
+      "seconds": 81.64
+    },
+    {
+      "step": "fetch",
+      "status": "start",
+      "payload": {
+        "live": true
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "fetch",
+      "status": "ok",
+      "payload": {
+        "hospital_id": "norman_regional",
+        "url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+        "status": "live",
+        "bytes": 39141747,
+        "total_bytes": 39141747,
+        "seconds": 2.07,
+        "sha256": "4b79577f0859aadc9ab9db6aa53b221edf433592ed1406c201a3336b5156bf9f",
+        "matched_fixture": true,
+        "note": ""
+      },
+      "seconds": 5.42
+    },
+    {
+      "step": "audit",
+      "status": "start",
+      "payload": {
+        "hospital_id": "norman_regional"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "audit",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_02",
+        "hospital_id": "norman_regional",
+        "findings": [
+          {
+            "kind": "above_cash",
+            "line_nos": [
+              5
+            ],
+            "summary": "Patient charged $449.00 for chest X-ray, but posted cash price is $269.40.",
+            "evidence": [
+              {
+                "hospital_id": "norman_regional",
+                "code": "71046",
+                "description": "Chest Pa & Lat(Routine)2 Views",
+                "setting": "both",
+                "gross": 449.0,
+                "discounted_cash": 269.4,
+                "source_line": 14756,
+                "source_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+                "fetched_on": "2026-09-13"
+              }
+            ],
+            "amount_at_stake": 179.6,
+            "basis": "cash",
+            "needs_user_judgment": false,
+            "regulation": null,
+            "confidence": 1.0
+          }
+        ],
+        "clean": false,
+        "file_used": {
+          "hospital_id": "norman_regional",
+          "code": "36415",
+          "description": "Venipuncture Charge",
+          "setting": "both",
+          "gross": 46.0,
+          "discounted_cash": 27.6,
+          "source_line": 13718,
+          "source_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+          "fetched_on": "2026-09-13"
+        },
+        "notes": [
+          "coding_specialist: primary model failed, fallback model used",
+          "line_matcher: primary model failed, fallback model used",
+          "rights_specialist: primary model failed, fallback model used",
+          "dropped above_cash on lines [1] from line_matcher: the price charged is not above the posted cash price"
+        ],
+        "status": "audited"
+      },
+      "seconds": 40.09
+    },
+    {
+      "step": "card",
+      "status": "start",
+      "payload": {
+        "bill_id": "bill_02",
+        "status": "audited"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "card",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_02",
+        "situation": "Line 5 prices 71046 at $449.00, above the $269.40 cash price the hospital publishes for it (row 14756), a difference of $179.60.",
+        "status": "audited",
+        "options": [
+          {
+            "id": "dispute",
+            "label": "Send the dispute letter",
+            "consequence": "Letter cites the hospital's own price file row; hospital has 30 days to answer"
+          },
+          {
+            "id": "itemized",
+            "label": "Request the itemized bill first",
+            "consequence": "Delays payment; confirms each line before disputing"
+          },
+          {
+            "id": "drop",
+            "label": "Pay as billed",
+            "consequence": "You accept the charge"
+          }
+        ],
+        "default_option": "dispute",
+        "deadline": "2026-09-14",
+        "deadline_reason": "The statement's due date, 2026-09-11, has passed; act today and ask billing to pause collection while the dispute is open",
+        "evidence_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+        "evidence_lines": [
+          14756
+        ],
+        "amount_at_stake": 179.6,
+        "basis": "cash",
+        "needs_user_judgment": false,
+        "clean": false,
+        "kind": "above_cash"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "done",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_02",
+        "clean": false,
+        "amount_at_stake": 179.6
+      },
+      "seconds": 127.15
+    }
+  ],
+  "bill": {
+    "hospital_name": "Norman Regional Health System",
+    "hospital_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+    "patient_name": "Casey Example",
+    "account_number": "FB-2026-000002",
+    "statement_date": "2026-08-12",
+    "service_date_start": "2026-07-22",
+    "service_date_end": "2026-07-22",
+    "payer": "Self-pay",
+    "visit_type": "Outpatient diagnostics",
+    "clinical_note": null,
+    "lines": [
+      {
+        "line_no": 1,
+        "date_of_service": "2026-07-22",
+        "code": "36415",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Venipuncture",
+        "units": 1.0,
+        "charge": 46.0,
+        "patient_price": 27.6,
+        "provider": null,
+        "network_note": null,
+        "crop": {
+          "page": 0,
+          "x0": 75,
+          "y0": 390,
+          "x1": 1420,
+          "y1": 420
+        }
+      },
+      {
+        "line_no": 2,
+        "date_of_service": "2026-07-22",
+        "code": "84443",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Thyroid Stimulating Hormone",
+        "units": 1.0,
+        "charge": 248.0,
+        "patient_price": 148.8,
+        "provider": null,
+        "network_note": null,
+        "crop": {
+          "page": 0,
+          "x0": 75,
+          "y0": 425,
+          "x1": 1420,
+          "y1": 455
+        }
+      },
+      {
+        "line_no": 3,
+        "date_of_service": "2026-07-22",
+        "code": "83036",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Hemoglobin A1c",
+        "units": 1.0,
+        "charge": 135.0,
+        "patient_price": 81.0,
+        "provider": null,
+        "network_note": null,
+        "crop": {
+          "page": 0,
+          "x0": 75,
+          "y0": 458,
+          "x1": 1420,
+          "y1": 488
+        }
+      },
+      {
+        "line_no": 4,
+        "date_of_service": "2026-07-22",
+        "code": "93005",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "ECG tracing, 12 lead",
+        "units": 1.0,
+        "charge": 409.0,
+        "patient_price": 245.4,
+        "provider": null,
+        "network_note": null,
+        "crop": {
+          "page": 0,
+          "x0": 75,
+          "y0": 491,
+          "x1": 1420,
+          "y1": 521
+        }
+      },
+      {
+        "line_no": 5,
+        "date_of_service": "2026-07-22",
+        "code": "71046",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Chest X-ray, 2 views",
+        "units": 1.0,
+        "charge": 449.0,
+        "patient_price": 449.0,
+        "provider": null,
+        "network_note": null,
+        "crop": {
+          "page": 0,
+          "x0": 75,
+          "y0": 524,
+          "x1": 1420,
+          "y1": 554
+        }
+      }
+    ],
+    "total_charges": 1287.0,
+    "total_adjustments": -335.2,
+    "patient_balance": 951.8,
+    "fictional_label_present": true,
+    "crops": {
+      "hospital_name": {
+        "page": 0,
+        "x0": 75,
+        "y0": 88,
+        "x1": 580,
+        "y1": 130
+      },
+      "patient_name": {
+        "page": 0,
+        "x0": 75,
+        "y0": 195,
+        "x1": 400,
+        "y1": 220
+      },
+      "account_number": {
+        "page": 0,
+        "x0": 620,
+        "y0": 195,
+        "x1": 870,
+        "y1": 220
+      },
+      "statement_date": {
+        "page": 0,
+        "x0": 950,
+        "y0": 195,
+        "x1": 1200,
+        "y1": 220
+      },
+      "service_date_start": {
+        "page": 0,
+        "x0": 620,
+        "y0": 240,
+        "x1": 870,
+        "y1": 265
+      },
+      "payer": {
+        "page": 0,
+        "x0": 950,
+        "y0": 240,
+        "x1": 1150,
+        "y1": 265
+      }
+    }
+  },
+  "audit": {
+    "bill_id": "bill_02",
+    "hospital_id": "norman_regional",
+    "findings": [
+      {
+        "kind": "above_cash",
+        "line_nos": [
+          5
+        ],
+        "summary": "Patient charged $449.00 for chest X-ray, but posted cash price is $269.40.",
+        "evidence": [
+          {
+            "hospital_id": "norman_regional",
+            "code": "71046",
+            "description": "Chest Pa & Lat(Routine)2 Views",
+            "setting": "both",
+            "gross": 449.0,
+            "discounted_cash": 269.4,
+            "source_line": 14756,
+            "source_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+            "fetched_on": "2026-09-13"
+          }
+        ],
+        "amount_at_stake": 179.6,
+        "basis": "cash",
+        "needs_user_judgment": false,
+        "regulation": null,
+        "confidence": 1.0
+      }
+    ],
+    "clean": false,
+    "file_used": {
+      "hospital_id": "norman_regional",
+      "code": "36415",
+      "description": "Venipuncture Charge",
+      "setting": "both",
+      "gross": 46.0,
+      "discounted_cash": 27.6,
+      "source_line": 13718,
+      "source_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+      "fetched_on": "2026-09-13"
+    },
+    "notes": [
+      "coding_specialist: primary model failed, fallback model used",
+      "line_matcher: primary model failed, fallback model used",
+      "rights_specialist: primary model failed, fallback model used",
+      "dropped above_cash on lines [1] from line_matcher: the price charged is not above the posted cash price"
+    ],
+    "status": "audited"
+  },
+  "card": {
+    "bill_id": "bill_02",
+    "situation": "Line 5 prices 71046 at $449.00, above the $269.40 cash price the hospital publishes for it (row 14756), a difference of $179.60.",
+    "status": "audited",
+    "options": [
+      {
+        "id": "dispute",
+        "label": "Send the dispute letter",
+        "consequence": "Letter cites the hospital's own price file row; hospital has 30 days to answer"
+      },
+      {
+        "id": "itemized",
+        "label": "Request the itemized bill first",
+        "consequence": "Delays payment; confirms each line before disputing"
+      },
+      {
+        "id": "drop",
+        "label": "Pay as billed",
+        "consequence": "You accept the charge"
+      }
+    ],
+    "default_option": "dispute",
+    "deadline": "2026-09-14",
+    "deadline_reason": "The statement's due date, 2026-09-11, has passed; act today and ask billing to pause collection while the dispute is open",
+    "evidence_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+    "evidence_lines": [
+      14756
+    ],
+    "amount_at_stake": 179.6,
+    "basis": "cash",
+    "needs_user_judgment": false,
+    "clean": false,
+    "kind": "above_cash"
+  },
+  "ics": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Fairbill//Decision deadline//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:bill_02-2026-09-14-above_cash@fairbill.local\r\nDTSTAMP:20260914T083233Z\r\nDTSTART;VALUE=DATE:20260914\r\nDTEND;VALUE=DATE:20260915\r\nSUMMARY:Fairbill: bill_02 response deadline (above_cash)\r\nDESCRIPTION:The statement's due date\\, 2026-09-11\\, has passed\\; act today \r\n and ask billing to pause collection while the dispute is open. Evidence: h\r\n ttps://www.normanregional.com/documents/PFS/736048282_norman-regional-heal\r\n th-system_standardcharges.csv\r\nLOCATION:Norman Regional Health System\r\nTRANSP:TRANSPARENT\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n",
+  "letter": {
+    "bill_id": "bill_02",
+    "kind": "dispute",
+    "to_name": "Norman Regional Health System",
+    "to_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+    "from_name": "Casey Example",
+    "re_line": "Re: Dispute of Overcharge on Account FB-2026-000002",
+    "body": "Dear Billing Office,\n\nI am writing to dispute a charge on my account FB-2026-000002, dated 2026-08-12. I was billed $449.00 for code 71046 (Chest X-ray, 2 views) on line 5, but your published price file shows the cash price for this service should be $269.40, not $449.00.\n\nAccording to your own price file row 14756, code 71046 Chest Pa & Lat(Routine)2 Views has a discounted cash price of $269.40. I am a self-pay patient and should receive this price. The difference between what I was charged and what your price file lists is $179.60.\n\nUnder 45 CFR 180.50, I have the right to the prices your hospital publishes. I am asking you to correct this overcharge and adjust my bill to reflect the $269.40 cash price for code 71046.\n\nPlease respond by 2026-09-14 with a corrected bill or explanation. I also ask that you pause any collection activity on this account while this dispute is being reviewed.\n\nSincerely,\nCasey Example\n\nSources:\n- The hospital's own standard-charges file, row 14756: 71046 Chest Pa & Lat(Routine)2 Views, posted gross $449.00, discounted cash price $269.40 (file fetched 2026-09-13). https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv\n- 45 CFR 180.50 requires this hospital to publish its standard charges, including the discounted cash price, in a machine-readable file. https://www.ecfr.gov/current/title-45/part-180",
+    "citations": [
+      "row 14756",
+      "45 CFR 180.50"
+    ],
+    "footer": "Fairbill drafts letters from public price data. This is not legal advice. Patient names in this demo are fictional."
+  },
+  "letter_text": "2026-09-14\n\nNorman Regional Health System\nNorman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126\n\nRe: Dispute of Overcharge on Account FB-2026-000002\n\nDear Billing Office,\n\nI am writing to dispute a charge on my account FB-2026-000002, dated 2026-08-12. I was billed $449.00 for code 71046 (Chest X-ray, 2 views) on line 5, but your published price file shows the cash price for this service should be $269.40, not $449.00.\n\nAccording to your own price file row 14756, code 71046 Chest Pa & Lat(Routine)2 Views has a discounted cash price of $269.40. I am a self-pay patient and should receive this price. The difference between what I was charged and what your price file lists is $179.60.\n\nUnder 45 CFR 180.50, I have the right to the prices your hospital publishes. I am asking you to correct this overcharge and adjust my bill to reflect the $269.40 cash price for code 71046.\n\nPlease respond by 2026-09-14 with a corrected bill or explanation. I also ask that you pause any collection activity on this account while this dispute is being reviewed.\n\nSincerely,\nCasey Example\n\nSources:\n- The hospital's own standard-charges file, row 14756: 71046 Chest Pa & Lat(Routine)2 Views, posted gross $449.00, discounted cash price $269.40 (file fetched 2026-09-13). https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv\n- 45 CFR 180.50 requires this hospital to publish its standard charges, including the discounted cash price, in a machine-readable file. https://www.ecfr.gov/current/title-45/part-180\n\nFairbill drafts letters from public price data. This is not legal advice. Patient names in this demo are fictional.\n",
+  "ledger": [
+    {
+      "id": "623b4804790c",
+      "ts": "2026-09-14T03:09:33.684055+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "read",
+      "why": "read bill_02_photo.jpg",
+      "evidence": [
+        "bill_02_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "848b6172eb36",
+      "ts": "2026-09-14T03:09:40.400212+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "fetch",
+      "why": "live fetch of the hospital price file",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "7ade577f7b58",
+      "ts": "2026-09-14T03:11:40.426699+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "audit",
+      "why": "0 finding(s) against the hospital's file",
+      "evidence": [],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "cad5388b5a24",
+      "ts": "2026-09-14T03:11:40.430237+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "card",
+      "why": "decision card, default itemized",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "1c42cffaf03d",
+      "ts": "2026-09-14T06:12:55.575150+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "read",
+      "why": "read bill_02_photo.jpg",
+      "evidence": [
+        "bill_02_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "dafcc1ad5dee",
+      "ts": "2026-09-14T06:12:55.586486+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "fetch",
+      "why": "fixture fetch of the hospital price file",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "e5b5f6ee3f39",
+      "ts": "2026-09-14T06:13:10.660122+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "audit",
+      "why": "1 finding(s) against the hospital's file",
+      "evidence": [
+        "71046 row 14756"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "825f85d33f1c",
+      "ts": "2026-09-14T06:13:10.663875+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "card",
+      "why": "decision card, default dispute",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "4ea2b5eb3465",
+      "ts": "2026-09-14T07:27:08.799547+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "read",
+      "why": "read bill_02_photo.jpg",
+      "evidence": [
+        "bill_02_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "23cf4cff38a1",
+      "ts": "2026-09-14T07:27:14.501617+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "fetch",
+      "why": "live fetch of the hospital price file",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "d883811efdf7",
+      "ts": "2026-09-14T07:29:14.529360+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "audit",
+      "why": "0 finding(s) against the hospital's file",
+      "evidence": [],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "ade7979ddaa9",
+      "ts": "2026-09-14T07:29:14.532606+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "card",
+      "why": "decision card, default itemized",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "c4a0186e4123",
+      "ts": "2026-09-14T08:31:47.538835+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "read",
+      "why": "read bill_02_photo.jpg",
+      "evidence": [
+        "bill_02_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "bedaf5d08d59",
+      "ts": "2026-09-14T08:31:52.950748+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "fetch",
+      "why": "live fetch of the hospital price file",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "a56c8d5c7768",
+      "ts": "2026-09-14T08:32:33.048886+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "audit",
+      "why": "1 finding(s) against the hospital's file",
+      "evidence": [
+        "71046 row 14756"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "eb943ca1a55c",
+      "ts": "2026-09-14T08:32:33.052113+00:00",
+      "session_id": "precompute_bill_02",
+      "bill_id": "bill_02",
+      "action": "card",
+      "why": "decision card, default dispute",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    }
+  ]
+}

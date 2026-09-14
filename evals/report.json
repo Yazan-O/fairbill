@@ -1,0 +1,533 @@
+{
+  "generated": "2026-09-14T05:26:44",
+  "overall_score": 1.0,
+  "elapsed_seconds": 3682.6,
+  "letters_available": true,
+  "totals": {
+    "planted": 10,
+    "matched": 10,
+    "false_flag_rows": 0,
+    "reader_exact": 6,
+    "reader_rows": 6
+  },
+  "rows": [
+    {
+      "case": "bill_01_truth",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "matched 1/1 planted"
+    },
+    {
+      "case": "bill_02_truth",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "matched 1/1 planted"
+    },
+    {
+      "case": "bill_03_truth",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "matched 1/1 planted"
+    },
+    {
+      "case": "bill_04_truth",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "matched 1/1 planted"
+    },
+    {
+      "case": "bill_05_truth",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "matched 1/1 planted"
+    },
+    {
+      "case": "bill_06_truth",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "clean bill, no findings"
+    },
+    {
+      "case": "bill_01_truth",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_02_truth",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_03_truth",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_04_truth",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_05_truth",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_06_truth",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_01_truth",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "1/1 cite a file row"
+    },
+    {
+      "case": "bill_02_truth",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "1/1 cite a file row"
+    },
+    {
+      "case": "bill_03_truth",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "1/1 cite a file row"
+    },
+    {
+      "case": "bill_04_truth",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "1/1 cite a file row"
+    },
+    {
+      "case": "bill_05_truth",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "no finding requires a file row"
+    },
+    {
+      "case": "bill_06_truth",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "no finding requires a file row"
+    },
+    {
+      "case": "bill_01_truth",
+      "evaluator": "ReaderExact",
+      "score": 0.0,
+      "test_pass": true,
+      "reason": "truth-fed row, the reader did not run"
+    },
+    {
+      "case": "bill_02_truth",
+      "evaluator": "ReaderExact",
+      "score": 0.0,
+      "test_pass": true,
+      "reason": "truth-fed row, the reader did not run"
+    },
+    {
+      "case": "bill_03_truth",
+      "evaluator": "ReaderExact",
+      "score": 0.0,
+      "test_pass": true,
+      "reason": "truth-fed row, the reader did not run"
+    },
+    {
+      "case": "bill_04_truth",
+      "evaluator": "ReaderExact",
+      "score": 0.0,
+      "test_pass": true,
+      "reason": "truth-fed row, the reader did not run"
+    },
+    {
+      "case": "bill_05_truth",
+      "evaluator": "ReaderExact",
+      "score": 0.0,
+      "test_pass": true,
+      "reason": "truth-fed row, the reader did not run"
+    },
+    {
+      "case": "bill_06_truth",
+      "evaluator": "ReaderExact",
+      "score": 0.0,
+      "test_pass": true,
+      "reason": "truth-fed row, the reader did not run"
+    },
+    {
+      "case": "bill_01_truth",
+      "evaluator": "LetterQuality",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "The letter satisfies all four criteria: it quotes the hospital's own price-file row (code 85025, gross $140.00, cash $84.00, row 13220), names the governing regulation (45 CFR 180.50), uses only dollar amounts that appear in the audit findings, and is written in clear plain language well under 350 words."
+    },
+    {
+      "case": "bill_02_truth",
+      "evaluator": "LetterQuality",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "The letter earns full marks on all four criteria: it precisely quotes price-file row 14756 with code 71046 and both dollar amounts, cites 45 CFR 180.50 by name with a plain explanation, uses only the three amounts confirmed in the audit findings ($449.00, $269.40, $179.60), and is written in clear, jargon-free language well under 350 words."
+    },
+    {
+      "case": "bill_03_truth",
+      "evaluator": "LetterQuality",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "The letter satisfies all four criteria: it precisely quotes price-file row 6833 with code 85025 and both posted prices, cites 45 CFR 180.50 by name with a plain explanation, uses only dollar amounts that appear verbatim in the audit findings, and is written in clear conversational language well under 350 words with no unexplained legal jargon."
+    },
+    {
+      "case": "bill_04_truth",
+      "evaluator": "LetterQuality",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "The letter earns full marks on all four criteria: it precisely cites price-file rows 4045 and 4688 with codes and posted prices, invokes 45 CFR 180.50 by name, uses only dollar amounts that appear verbatim in the audit findings ($6,795.00, $679.50, $189.80, $489.70), and is written in clear, jargon-free prose well under 350 words."
+    },
+    {
+      "case": "bill_05_truth",
+      "evaluator": "LetterQuality",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "The letter satisfies all four criteria: it quotes the hospital's own price file (row 15227, code 45378, $2,506.00/$1,503.60), names both controlling regulations (45 CFR 149.420 and 45 CFR 180.50), uses only dollar amounts traceable to the audit findings or the cited price-file row, and is written in clear plain language well under 350 words."
+    },
+    {
+      "case": "bill_06_truth",
+      "evaluator": "LetterQuality",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "The letter satisfies all four criteria: it cites a specific price-file row (row 13718, code 36415, $46.00/$27.60) as evidence; it names 45 CFR 180.50 as the governing regulation; every dollar amount is drawn directly from the bill lines stated in the letter and none are invented; and the prose is plain, jargon-free, and well under 350 words."
+    },
+    {
+      "case": "bill_01_e2e",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "matched 1/1 planted"
+    },
+    {
+      "case": "bill_02_e2e",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "matched 1/1 planted"
+    },
+    {
+      "case": "bill_03_e2e",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "matched 1/1 planted"
+    },
+    {
+      "case": "bill_04_e2e",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "matched 1/1 planted"
+    },
+    {
+      "case": "bill_05_e2e",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "matched 1/1 planted"
+    },
+    {
+      "case": "bill_06_e2e",
+      "evaluator": "FindingsMatch",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "clean bill, no findings"
+    },
+    {
+      "case": "bill_01_e2e",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_02_e2e",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_03_e2e",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_04_e2e",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_05_e2e",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_06_e2e",
+      "evaluator": "FalseFlags",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "0 false flags"
+    },
+    {
+      "case": "bill_01_e2e",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "1/1 cite a file row"
+    },
+    {
+      "case": "bill_02_e2e",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "1/1 cite a file row"
+    },
+    {
+      "case": "bill_03_e2e",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "1/1 cite a file row"
+    },
+    {
+      "case": "bill_04_e2e",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "1/1 cite a file row"
+    },
+    {
+      "case": "bill_05_e2e",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "no finding requires a file row"
+    },
+    {
+      "case": "bill_06_e2e",
+      "evaluator": "EvidenceCited",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "no finding requires a file row"
+    },
+    {
+      "case": "bill_01_e2e",
+      "evaluator": "ReaderExact",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "exact match"
+    },
+    {
+      "case": "bill_02_e2e",
+      "evaluator": "ReaderExact",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "exact match"
+    },
+    {
+      "case": "bill_03_e2e",
+      "evaluator": "ReaderExact",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "exact match"
+    },
+    {
+      "case": "bill_04_e2e",
+      "evaluator": "ReaderExact",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "exact match"
+    },
+    {
+      "case": "bill_05_e2e",
+      "evaluator": "ReaderExact",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "exact match"
+    },
+    {
+      "case": "bill_06_e2e",
+      "evaluator": "ReaderExact",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "exact match"
+    },
+    {
+      "case": "bill_01_e2e",
+      "evaluator": "LetterQuality",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "The letter satisfies all four criteria: it cites the exact price-file row (row 13220, code 85025, posted gross $140.00, cash $84.00), names 45 CFR 180.50 with a plain explanation of the right it confers, uses only dollar amounts confirmed in the audit findings, and is written in clear plain language well under 350 words."
+    },
+    {
+      "case": "bill_02_e2e",
+      "evaluator": "LetterQuality",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "The letter earns full marks on all four criteria: it precisely cites the hospital's own price-file row 14756 with code 71046 and both dollar figures, invokes 45 CFR 180.50 by name with a plain-English explanation, uses only amounts that appear in the audit findings (no invented figures), and is written in clear, jargon-free language well under 350 words."
+    },
+    {
+      "case": "bill_03_e2e",
+      "evaluator": "LetterQuality",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "The letter earns full marks on all four criteria: it precisely cites the hospital's own price-file row 6833 with code 85025 and its posted prices, names 45 CFR 180.50 with a plain-English explanation, uses only dollar amounts that appear verbatim in the audit findings, and is written in clear, jargon-free language well under 350 words."
+    },
+    {
+      "case": "bill_04_e2e",
+      "evaluator": "LetterQuality",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "The letter earns all four quarter-points: it quotes the hospital's own price-file row 4045 with code 99285 and its posted/cash prices; it names 45 CFR 180.50 as the governing regulation; every dollar figure ($679.50, $189.80, $1,898.00, $489.70, $6,795.00) matches the audit findings exactly with nothing invented; and it is written in clear, jargon-free plain language well under 350 words."
+    },
+    {
+      "case": "bill_05_e2e",
+      "evaluator": "LetterQuality",
+      "score": 1.0,
+      "test_pass": true,
+      "reason": "The letter earns full marks on all four criteria: it quotes the hospital's own price file at row 15227 with code 45378 and specific posted prices, cites both 45 CFR 149.420 and 45 CFR 180.50 by name, uses only dollar amounts that appear in the audit findings or the hospital's published price file, and is written in clear plain language well under 350 words."
+    },
+    {
+      "case": "bill_06_e2e",
+      "evaluator": "LetterQuality",
+      "score": 0.0,
+      "test_pass": true,
+      "reason": "clean bill: the decision card's default is to send nothing"
+    }
+  ],
+  "bills": {
+    "bill_01_truth": {
+      "bill_id": "bill_01",
+      "suite": "truth",
+      "seconds": 218.7,
+      "planted": 1,
+      "found": 1
+    },
+    "bill_02_truth": {
+      "bill_id": "bill_02",
+      "suite": "truth",
+      "seconds": 83.4,
+      "planted": 1,
+      "found": 1
+    },
+    "bill_03_truth": {
+      "bill_id": "bill_03",
+      "suite": "truth",
+      "seconds": 98.7,
+      "planted": 1,
+      "found": 1
+    },
+    "bill_04_truth": {
+      "bill_id": "bill_04",
+      "suite": "truth",
+      "seconds": 312.1,
+      "planted": 1,
+      "found": 1
+    },
+    "bill_05_truth": {
+      "bill_id": "bill_05",
+      "suite": "truth",
+      "seconds": 304.2,
+      "planted": 1,
+      "found": 1
+    },
+    "bill_06_truth": {
+      "bill_id": "bill_06",
+      "suite": "truth",
+      "seconds": 172.4,
+      "planted": 0,
+      "found": 0
+    },
+    "bill_01_e2e": {
+      "bill_id": "bill_01",
+      "suite": "e2e",
+      "read_exact": true,
+      "read_seconds": 159.4,
+      "seconds": 565.8,
+      "planted": 1,
+      "found": 1
+    },
+    "bill_02_e2e": {
+      "bill_id": "bill_02",
+      "suite": "e2e",
+      "read_exact": true,
+      "read_seconds": 72.8,
+      "seconds": 166.2,
+      "planted": 1,
+      "found": 1
+    },
+    "bill_03_e2e": {
+      "bill_id": "bill_03",
+      "suite": "e2e",
+      "read_exact": true,
+      "read_seconds": 83.3,
+      "seconds": 194.1,
+      "planted": 1,
+      "found": 1
+    },
+    "bill_04_e2e": {
+      "bill_id": "bill_04",
+      "suite": "e2e",
+      "read_exact": true,
+      "read_seconds": 89.0,
+      "seconds": 242.3,
+      "planted": 1,
+      "found": 1
+    },
+    "bill_05_e2e": {
+      "bill_id": "bill_05",
+      "suite": "e2e",
+      "read_exact": true,
+      "read_seconds": 78.5,
+      "seconds": 177.5,
+      "planted": 1,
+      "found": 1
+    },
+    "bill_06_e2e": {
+      "bill_id": "bill_06",
+      "suite": "e2e",
+      "read_exact": true,
+      "read_seconds": 429.3,
+      "seconds": 476.8,
+      "planted": 0,
+      "found": 0
+    }
+  }
+}

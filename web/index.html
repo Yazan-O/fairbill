@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fairbill — audit a hospital bill against the hospital's own price file</title>
+<meta name="description" content="Fairbill checks every line of a hospital bill against that hospital's published standard-charges file and drafts the dispute.">
+<link rel="stylesheet" href="/static/style.css?v=6dade946">
+</head>
+<body>
+
+<header class="bar">
+  <span class="mark">Fairbill</span>
+  <span class="scenepos" id="scenepos">1 / 9 &nbsp;Gallery</span>
+  <span class="hstage" id="hstage" hidden></span>
+</header>
+
+<main>
+
+<!-- 1 ------------------------------------------------------------ gallery -->
+<section class="scene" id="s1">
+  <h1>Every US hospital publishes its price list. Nobody reads it.</h1>
+  <p class="lede">Pick a statement. Fairbill reads it, pulls that hospital's own published
+     standard-charges file, and puts the hospital's row next to the charge.</p>
+  <p class="banner">Demo statements. Patients fictional; prices are the hospitals' own published
+     standard charges (fetched 2026-09-13).</p>
+  <div class="grid" id="gallery"><p class="spin">Loading statements…</p></div>
+</section>
+
+<!-- 2 --------------------------------------------------------------- read -->
+<section class="scene" id="s2" hidden>
+  <h2>Step 1 — Read</h2>
+  <h1 id="readTitle">Reading the statement</h1>
+  <p class="stage" id="stRead" hidden></p>
+  <p class="note" id="readNote"></p>
+  <p class="lede">Every field came from a box on the page. Tap a line to see where it was read.</p>
+  <div class="pagewrap" id="pagewrap">
+    <div class="pageinner" id="pageinner"><img id="pageimg" alt="The statement being audited"></div>
+  </div>
+  <dl class="fields" id="fields"></dl>
+  <h2 style="margin-top:16px">Lines read</h2>
+  <div class="rows" id="readRows"><p class="spin" style="padding:10px">waiting…</p></div>
+</section>
+
+<!-- 3 -------------------------------------------------------------- fetch -->
+<section class="scene" id="s3" hidden>
+  <h2>Step 2 — Fetch</h2>
+  <h1 id="fetchTitle">Downloading the hospital's price file</h1>
+  <p class="stage" id="stFetch" hidden></p>
+  <p class="kv" id="fetchUrl"></p>
+  <div class="progress"><i id="fetchBar"></i></div>
+  <p class="kv" id="fetchStats"></p>
+  <p><span class="badge" id="fetchBadge">…</span></p>
+  <p class="note" id="fetchNote"></p>
+</section>
+
+<!-- 4 -------------------------------------------------------------- audit -->
+<section class="scene" id="s4" hidden>
+  <h2>Step 3 — Audit</h2>
+  <h1>Line by line against the file</h1>
+  <p class="stage" id="stAudit" hidden></p>
+  <div class="chips" id="auditChips" hidden></div>
+  <div id="auditBanner"></div>
+  <div class="rows" id="auditRows"><p class="spin" style="padding:10px">waiting…</p></div>
+</section>
+
+<!-- 5 ----------------------------------------------------------- decision -->
+<section class="scene" id="s5" hidden>
+  <h2>Step 4 — Decision</h2>
+  <h1 id="cardTitle">What do you want to do?</h1>
+  <p class="stage" id="stCard" hidden></p>
+  <div id="stakeWrap"></div>
+  <p id="situation"></p>
+  <div id="options"></div>
+  <div class="deadline" id="deadline"></div>
+</section>
+
+<!-- 6 ------------------------------------------------------------- output -->
+<section class="scene" id="s6" hidden>
+  <h2>Step 5 — Output</h2>
+  <h1 id="outTitle">Your letter</h1>
+  <p class="stage" id="stLetter" hidden></p>
+  <pre class="letter" id="letter">…</pre>
+  <div class="btnrow">
+    <button class="btn" id="copyBtn" type="button">Copy the letter</button>
+    <a class="btn ghost" id="icsLink" href="#" download>Add deadline to calendar</a>
+  </div>
+  <p class="note" id="outNote"></p>
+</section>
+
+<!-- 7 ------------------------------------------------------------- ledger -->
+<section class="scene" id="s7" hidden>
+  <h2>Step 6 — Ledger</h2>
+  <h1>Everything it did, undoable</h1>
+  <p class="lede">Every step writes one row. Reads cannot be undone; actions can.</p>
+  <button class="btn" id="openLedger" type="button">Open the ledger</button>
+  <p class="note" id="ledgerCount"></p>
+</section>
+
+<!-- 8 -------------------------------------------------------------- guard -->
+<section class="scene" id="s8" hidden>
+  <h2>Step 7 — Guard</h2>
+  <h1>It never moves money</h1>
+  <p class="lede">A payment tool is wired in on purpose. A hook denies it before it runs.</p>
+  <form class="chatbox" id="chatForm">
+    <input id="chatText" value="just pay it" aria-label="Ask the agent">
+    <button class="btn" type="submit" id="chatSend">Send</button>
+  </form>
+  <p class="stage" id="stChat" hidden></p>
+  <div id="chatOut"></div>
+</section>
+
+<!-- 9 -------------------------------------------------------------- bench -->
+<section class="scene" id="s9">
+  <h2>Step 8 — Measured</h2>
+  <h1>How often it is right</h1>
+  <div class="bench" id="bench">
+    <div><div class="n">…</div><div class="l">reader exact</div></div>
+    <div><div class="n">…</div><div class="l">planted found</div></div>
+    <div><div class="n">…</div><div class="l">false flags</div></div>
+  </div>
+  <p class="note" id="benchNote"></p>
+  <p class="note" id="sources"></p>
+</section>
+
+</main>
+
+<div class="sheet" id="sheet" aria-hidden="true">
+  <button class="close" id="closeLedger" type="button" aria-label="Close">×</button>
+  <h2>Ledger</h2>
+  <div id="ledgerRows"></div>
+  <span class="fict">Demo statements. Patients fictional; every price is the hospital's own
+    published standard charge.</span>
+</div>
+
+<footer class="bar">
+  <span class="fict">Demo statements. Patients fictional; every price is the hospital's own
+    published standard charge.</span>
+  <button class="undo" id="footLedger" type="button">Ledger</button>
+</footer>
+
+<script src="/static/app.js?v=2f3b39ac"></script>
+</body>
+</html>

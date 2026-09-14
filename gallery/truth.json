@@ -1,0 +1,1639 @@
+[
+ {
+  "id": "bill_01",
+  "hospital_id": "norman_regional",
+  "files": {
+   "pdf": "gallery/bills/bill_01.pdf",
+   "page": "gallery/bills/bill_01_page.png",
+   "photo": "gallery/bills/bill_01_photo.jpg"
+  },
+  "bill": {
+   "hospital_name": "Norman Regional Health System",
+   "hospital_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+   "patient_name": "Jordan Sample",
+   "account_number": "FB-2026-000001",
+   "statement_date": "2026-09-04",
+   "service_date_start": "2026-08-14",
+   "service_date_end": "2026-08-14",
+   "payer": "Self-pay",
+   "visit_type": "Emergency visit",
+   "clinical_note": null,
+   "lines": [
+    {
+     "line_no": 1,
+     "date_of_service": "2026-08-14",
+     "code": "99283",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "ED Services Level 3",
+     "units": 1.0,
+     "charge": 1729.0,
+     "patient_price": 1037.4,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 562,
+      "x1": 1556,
+      "y1": 600
+     }
+    },
+    {
+     "line_no": 2,
+     "date_of_service": "2026-08-14",
+     "code": "36415",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "ED Venipuncture, Routine",
+     "units": 1.0,
+     "charge": 44.0,
+     "patient_price": 26.4,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 609,
+      "x1": 1556,
+      "y1": 647
+     }
+    },
+    {
+     "line_no": 3,
+     "date_of_service": "2026-08-14",
+     "code": "85025",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Complete Blood Count (CBC)",
+     "units": 1.0,
+     "charge": 140.0,
+     "patient_price": 84.0,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 657,
+      "x1": 1556,
+      "y1": 695
+     }
+    },
+    {
+     "line_no": 4,
+     "date_of_service": "2026-08-14",
+     "code": "85025",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Complete Blood Count (CBC)",
+     "units": 1.0,
+     "charge": 140.0,
+     "patient_price": 84.0,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 704,
+      "x1": 1556,
+      "y1": 742
+     }
+    },
+    {
+     "line_no": 5,
+     "date_of_service": "2026-08-14",
+     "code": "80053",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Comprehensive Metabolic Panel",
+     "units": 1.0,
+     "charge": 275.0,
+     "patient_price": 165.0,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 751,
+      "x1": 1556,
+      "y1": 789
+     }
+    },
+    {
+     "line_no": 6,
+     "date_of_service": "2026-08-14",
+     "code": "71046",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Chest X-ray, 2 views",
+     "units": 1.0,
+     "charge": 449.0,
+     "patient_price": 269.4,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 798,
+      "x1": 1556,
+      "y1": 836
+     }
+    },
+    {
+     "line_no": 7,
+     "date_of_service": "2026-08-14",
+     "code": "J1885",
+     "code_type": "HCPCS",
+     "modifier": null,
+     "description": "Ketorolac 15 mg injection",
+     "units": 1.0,
+     "charge": 48.82,
+     "patient_price": 29.29,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 845,
+      "x1": 1556,
+      "y1": 883
+     }
+    },
+    {
+     "line_no": 8,
+     "date_of_service": "2026-08-14",
+     "code": "96372",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Therapeutic injection, IM",
+     "units": 1.0,
+     "charge": 221.0,
+     "patient_price": 132.6,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 893,
+      "x1": 1556,
+      "y1": 931
+     }
+    }
+   ],
+   "total_charges": 3046.82,
+   "total_adjustments": 1218.73,
+   "patient_balance": 1828.09,
+   "fictional_label_present": true,
+   "crops": {
+    "fictional_label_top": {
+     "page": 0,
+     "x0": 280,
+     "y0": 61,
+     "x1": 1419,
+     "y1": 92
+    },
+    "fictional_label_bottom": {
+     "page": 0,
+     "x0": 280,
+     "y0": 2083,
+     "x1": 1419,
+     "y1": 2114
+    },
+    "hospital_name": {
+     "page": 0,
+     "x0": 144,
+     "y0": 143,
+     "x1": 799,
+     "y1": 201
+    },
+    "hospital_address": {
+     "page": 0,
+     "x0": 144,
+     "y0": 198,
+     "x1": 941,
+     "y1": 234
+    },
+    "patient_name": {
+     "page": 0,
+     "x0": 144,
+     "y0": 333,
+     "x1": 333,
+     "y1": 375
+    },
+    "account_number": {
+     "page": 0,
+     "x0": 855,
+     "y0": 333,
+     "x1": 1065,
+     "y1": 375
+    },
+    "statement_date": {
+     "page": 0,
+     "x0": 1216,
+     "y0": 333,
+     "x1": 1363,
+     "y1": 375
+    },
+    "service_date_start": {
+     "page": 0,
+     "x0": 855,
+     "y0": 417,
+     "x1": 1002,
+     "y1": 458
+    },
+    "payer": {
+     "page": 0,
+     "x0": 1216,
+     "y0": 417,
+     "x1": 1325,
+     "y1": 458
+    },
+    "total_charges": {
+     "page": 0,
+     "x0": 1425,
+     "y0": 956,
+     "x1": 1539,
+     "y1": 997
+    },
+    "total_adjustments": {
+     "page": 0,
+     "x0": 1416,
+     "y0": 997,
+     "x1": 1539,
+     "y1": 1038
+    },
+    "patient_balance": {
+     "page": 0,
+     "x0": 1425,
+     "y0": 1039,
+     "x1": 1539,
+     "y1": 1080
+    },
+    "due_date": {
+     "page": 0,
+     "x0": 144,
+     "y0": 1105,
+     "x1": 460,
+     "y1": 1143
+    }
+   }
+  },
+  "planted": [
+   {
+    "kind": "duplicate",
+    "line_nos": [
+     3,
+     4
+    ],
+    "summary": "The complete blood count (CPT 85025) is billed twice on the same day; only one collection is documented, so one of the two charges should come off.",
+    "evidence": [
+     {
+      "hospital_id": "norman_regional",
+      "code": "85025",
+      "description": "Complete Blood Count Cbc",
+      "setting": "both",
+      "gross": 140.0,
+      "discounted_cash": 84.0,
+      "source_line": 13220,
+      "source_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+      "fetched_on": "2026-09-13"
+     }
+    ],
+    "amount_at_stake": 84.0,
+    "basis": "cash",
+    "needs_user_judgment": false,
+    "regulation": null,
+    "confidence": 1.0
+   }
+  ],
+  "clean": false,
+  "notes": [
+   "Patient 'Jordan Sample', account FB-2026-000001, patient address, statement/service dates and the billed line-up are fictional.",
+   "Every charge and self-pay price is a verbatim row of the hospital's published standard charges file; see the evidence source_url and source_line.",
+   "The billing error on this statement is planted for the demo; it is not a real hospital error."
+  ]
+ },
+ {
+  "id": "bill_02",
+  "hospital_id": "norman_regional",
+  "files": {
+   "pdf": "gallery/bills/bill_02.pdf",
+   "page": "gallery/bills/bill_02_page.png",
+   "photo": "gallery/bills/bill_02_photo.jpg"
+  },
+  "bill": {
+   "hospital_name": "Norman Regional Health System",
+   "hospital_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+   "patient_name": "Casey Example",
+   "account_number": "FB-2026-000002",
+   "statement_date": "2026-08-12",
+   "service_date_start": "2026-07-22",
+   "service_date_end": "2026-07-22",
+   "payer": "Self-pay",
+   "visit_type": "Outpatient diagnostics",
+   "clinical_note": null,
+   "lines": [
+    {
+     "line_no": 1,
+     "date_of_service": "2026-07-22",
+     "code": "36415",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Venipuncture",
+     "units": 1.0,
+     "charge": 46.0,
+     "patient_price": 27.6,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 562,
+      "x1": 1556,
+      "y1": 600
+     }
+    },
+    {
+     "line_no": 2,
+     "date_of_service": "2026-07-22",
+     "code": "84443",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Thyroid Stimulating Hormone",
+     "units": 1.0,
+     "charge": 248.0,
+     "patient_price": 148.8,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 609,
+      "x1": 1556,
+      "y1": 647
+     }
+    },
+    {
+     "line_no": 3,
+     "date_of_service": "2026-07-22",
+     "code": "83036",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Hemoglobin A1c",
+     "units": 1.0,
+     "charge": 135.0,
+     "patient_price": 81.0,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 657,
+      "x1": 1556,
+      "y1": 695
+     }
+    },
+    {
+     "line_no": 4,
+     "date_of_service": "2026-07-22",
+     "code": "93005",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "ECG tracing, 12 lead",
+     "units": 1.0,
+     "charge": 409.0,
+     "patient_price": 245.4,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 704,
+      "x1": 1556,
+      "y1": 742
+     }
+    },
+    {
+     "line_no": 5,
+     "date_of_service": "2026-07-22",
+     "code": "71046",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Chest X-ray, 2 views",
+     "units": 1.0,
+     "charge": 449.0,
+     "patient_price": 449.0,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 751,
+      "x1": 1556,
+      "y1": 789
+     }
+    }
+   ],
+   "total_charges": 1287.0,
+   "total_adjustments": 335.2,
+   "patient_balance": 951.8,
+   "fictional_label_present": true,
+   "crops": {
+    "fictional_label_top": {
+     "page": 0,
+     "x0": 280,
+     "y0": 61,
+     "x1": 1419,
+     "y1": 92
+    },
+    "fictional_label_bottom": {
+     "page": 0,
+     "x0": 280,
+     "y0": 2083,
+     "x1": 1419,
+     "y1": 2114
+    },
+    "hospital_name": {
+     "page": 0,
+     "x0": 144,
+     "y0": 143,
+     "x1": 799,
+     "y1": 201
+    },
+    "hospital_address": {
+     "page": 0,
+     "x0": 144,
+     "y0": 198,
+     "x1": 941,
+     "y1": 234
+    },
+    "patient_name": {
+     "page": 0,
+     "x0": 144,
+     "y0": 333,
+     "x1": 340,
+     "y1": 375
+    },
+    "account_number": {
+     "page": 0,
+     "x0": 855,
+     "y0": 333,
+     "x1": 1065,
+     "y1": 375
+    },
+    "statement_date": {
+     "page": 0,
+     "x0": 1216,
+     "y0": 333,
+     "x1": 1363,
+     "y1": 375
+    },
+    "service_date_start": {
+     "page": 0,
+     "x0": 855,
+     "y0": 417,
+     "x1": 1002,
+     "y1": 458
+    },
+    "payer": {
+     "page": 0,
+     "x0": 1216,
+     "y0": 417,
+     "x1": 1325,
+     "y1": 458
+    },
+    "total_charges": {
+     "page": 0,
+     "x0": 1425,
+     "y0": 814,
+     "x1": 1539,
+     "y1": 855
+    },
+    "total_adjustments": {
+     "page": 0,
+     "x0": 1438,
+     "y0": 856,
+     "x1": 1539,
+     "y1": 897
+    },
+    "patient_balance": {
+     "page": 0,
+     "x0": 1447,
+     "y0": 897,
+     "x1": 1539,
+     "y1": 938
+    },
+    "due_date": {
+     "page": 0,
+     "x0": 144,
+     "y0": 963,
+     "x1": 460,
+     "y1": 1002
+    }
+   }
+  },
+  "planted": [
+   {
+    "kind": "above_cash",
+    "line_nos": [
+     5
+    ],
+    "summary": "The chest X-ray is charged at the full gross price; the hospital's own file lists a $269.40 self-pay price for the same code, a $179.60 difference.",
+    "evidence": [
+     {
+      "hospital_id": "norman_regional",
+      "code": "71046",
+      "description": "Chest Pa & Lat(Routine)2 Views",
+      "setting": "both",
+      "gross": 449.0,
+      "discounted_cash": 269.4,
+      "source_line": 14756,
+      "source_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+      "fetched_on": "2026-09-13"
+     }
+    ],
+    "amount_at_stake": 179.6,
+    "basis": "cash",
+    "needs_user_judgment": false,
+    "regulation": null,
+    "confidence": 1.0
+   }
+  ],
+  "clean": false,
+  "notes": [
+   "Patient 'Casey Example', account FB-2026-000002, patient address, statement/service dates and the billed line-up are fictional.",
+   "Every charge and self-pay price is a verbatim row of the hospital's published standard charges file; see the evidence source_url and source_line.",
+   "The billing error on this statement is planted for the demo; it is not a real hospital error."
+  ]
+ },
+ {
+  "id": "bill_03",
+  "hospital_id": "ou_health_oumc",
+  "files": {
+   "pdf": "gallery/bills/bill_03.pdf",
+   "page": "gallery/bills/bill_03_page.png",
+   "photo": "gallery/bills/bill_03_photo.jpg"
+  },
+  "bill": {
+   "hospital_name": "OU Health - University of Oklahoma Medical Center",
+   "hospital_address": "700 NE 13th St, Oklahoma City, OK 73104",
+   "patient_name": "Riley Demo",
+   "account_number": "FB-2026-000003",
+   "statement_date": "2026-08-24",
+   "service_date_start": "2026-08-03",
+   "service_date_end": "2026-08-03",
+   "payer": "Self-pay",
+   "visit_type": "Outpatient lab",
+   "clinical_note": null,
+   "lines": [
+    {
+     "line_no": 1,
+     "date_of_service": "2026-08-03",
+     "code": "36415",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Collection of venous blood, venipuncture",
+     "units": 1.0,
+     "charge": 90.0,
+     "patient_price": 9.0,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 604,
+      "x1": 1567,
+      "y1": 642
+     }
+    },
+    {
+     "line_no": 2,
+     "date_of_service": "2026-08-03",
+     "code": "85027",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Complete blood cell count, automated",
+     "units": 1.0,
+     "charge": 257.0,
+     "patient_price": 25.7,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 651,
+      "x1": 1567,
+      "y1": 689
+     }
+    },
+    {
+     "line_no": 3,
+     "date_of_service": "2026-08-03",
+     "code": "85018",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Hemoglobin",
+     "units": 1.0,
+     "charge": 113.0,
+     "patient_price": 11.3,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 698,
+      "x1": 1567,
+      "y1": 736
+     }
+    },
+    {
+     "line_no": 4,
+     "date_of_service": "2026-08-03",
+     "code": "85014",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Red blood cell concentration (hematocrit)",
+     "units": 1.0,
+     "charge": 123.0,
+     "patient_price": 12.3,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 745,
+      "x1": 1567,
+      "y1": 783
+     }
+    },
+    {
+     "line_no": 5,
+     "date_of_service": "2026-08-03",
+     "code": "85007",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Microscopic exam, white cells, manual differential",
+     "units": 1.0,
+     "charge": 636.0,
+     "patient_price": 63.6,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 793,
+      "x1": 1567,
+      "y1": 831
+     }
+    },
+    {
+     "line_no": 6,
+     "date_of_service": "2026-08-03",
+     "code": "80053",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Blood test, comprehensive group of chemicals",
+     "units": 1.0,
+     "charge": 1025.0,
+     "patient_price": 102.5,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 840,
+      "x1": 1567,
+      "y1": 878
+     }
+    }
+   ],
+   "total_charges": 2244.0,
+   "total_adjustments": 2019.6,
+   "patient_balance": 224.4,
+   "fictional_label_present": true,
+   "crops": {
+    "fictional_label_top": {
+     "page": 0,
+     "x0": 280,
+     "y0": 55,
+     "x1": 1419,
+     "y1": 86
+    },
+    "fictional_label_bottom": {
+     "page": 0,
+     "x0": 280,
+     "y0": 2088,
+     "x1": 1419,
+     "y1": 2119
+    },
+    "hospital_name": {
+     "page": 0,
+     "x0": 133,
+     "y0": 130,
+     "x1": 1151,
+     "y1": 191
+    },
+    "hospital_address": {
+     "page": 0,
+     "x0": 133,
+     "y0": 187,
+     "x1": 534,
+     "y1": 223
+    },
+    "patient_name": {
+     "page": 0,
+     "x0": 383,
+     "y0": 295,
+     "x1": 523,
+     "y1": 336
+    },
+    "account_number": {
+     "page": 0,
+     "x0": 383,
+     "y0": 331,
+     "x1": 576,
+     "y1": 372
+    },
+    "statement_date": {
+     "page": 0,
+     "x0": 383,
+     "y0": 367,
+     "x1": 518,
+     "y1": 408
+    },
+    "service_date_start": {
+     "page": 0,
+     "x0": 383,
+     "y0": 439,
+     "x1": 518,
+     "y1": 480
+    },
+    "payer": {
+     "page": 0,
+     "x0": 1216,
+     "y0": 439,
+     "x1": 1317,
+     "y1": 480
+    },
+    "total_charges": {
+     "page": 0,
+     "x0": 1445,
+     "y0": 993,
+     "x1": 1544,
+     "y1": 1032
+    },
+    "total_adjustments": {
+     "page": 0,
+     "x0": 1437,
+     "y0": 1032,
+     "x1": 1544,
+     "y1": 1071
+    },
+    "patient_balance": {
+     "page": 0,
+     "x0": 1464,
+     "y0": 1071,
+     "x1": 1544,
+     "y1": 1110
+    },
+    "due_date": {
+     "page": 0,
+     "x0": 133,
+     "y0": 1030,
+     "x1": 419,
+     "y1": 1068
+    }
+   }
+  },
+  "planted": [
+   {
+    "kind": "unbundled",
+    "line_nos": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "summary": "Four lines are the components of one complete blood count with differential (CPT 85025), which this hospital prices as a single row at $37.10 self-pay.",
+    "evidence": [
+     {
+      "hospital_id": "ou_health_oumc",
+      "code": "85025",
+      "description": "COMPLETE BLOOD CELL COUNT (RED CELLS; WHITE BLOOD CELL; PLATELETS); AUTOMATED TEST AND AUTOMATED DIFFERENTIAL WHITE BLOOD CELL COUNT",
+      "setting": "outpatient",
+      "gross": 371.0,
+      "discounted_cash": 37.1,
+      "source_line": 6833,
+      "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+      "fetched_on": "2026-09-13"
+     },
+     {
+      "hospital_id": "ou_health_oumc",
+      "code": "85027",
+      "description": "COMPLETE BLOOD CELL COUNT (RED CELLS; WHITE BLOOD CELL; PLATELETS); AUTOMATED TEST",
+      "setting": "outpatient",
+      "gross": 257.0,
+      "discounted_cash": 25.7,
+      "source_line": 6848,
+      "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+      "fetched_on": "2026-09-13"
+     },
+     {
+      "hospital_id": "ou_health_oumc",
+      "code": "85018",
+      "description": "HEMOGLOBIN",
+      "setting": "outpatient",
+      "gross": 113.0,
+      "discounted_cash": 11.3,
+      "source_line": 4038,
+      "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+      "fetched_on": "2026-09-13"
+     },
+     {
+      "hospital_id": "ou_health_oumc",
+      "code": "85014",
+      "description": "RED BLOOD CELL CONCENTRATION MEASUREMENT",
+      "setting": "outpatient",
+      "gross": 123.0,
+      "discounted_cash": 12.3,
+      "source_line": 4764,
+      "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+      "fetched_on": "2026-09-13"
+     },
+     {
+      "hospital_id": "ou_health_oumc",
+      "code": "85007",
+      "description": "MICROSCOPIC EXAMINATION FOR WHITE BLOOD CELLS WITH MANUAL CELL COUNT",
+      "setting": "outpatient",
+      "gross": 636.0,
+      "discounted_cash": 63.6,
+      "source_line": 4307,
+      "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+      "fetched_on": "2026-09-13"
+     }
+    ],
+    "amount_at_stake": 75.8,
+    "basis": "cash",
+    "needs_user_judgment": false,
+    "regulation": null,
+    "confidence": 1.0
+   }
+  ],
+  "clean": false,
+  "notes": [
+   "Patient 'Riley Demo', account FB-2026-000003, patient address, statement/service dates and the billed line-up are fictional.",
+   "Every charge and self-pay price is a verbatim row of the hospital's published standard charges file; see the evidence source_url and source_line.",
+   "The billing error on this statement is planted for the demo; it is not a real hospital error."
+  ]
+ },
+ {
+  "id": "bill_04",
+  "hospital_id": "ou_health_oumc",
+  "files": {
+   "pdf": "gallery/bills/bill_04.pdf",
+   "page": "gallery/bills/bill_04_page.png",
+   "photo": "gallery/bills/bill_04_photo.jpg"
+  },
+  "bill": {
+   "hospital_name": "OU Health - University of Oklahoma Medical Center",
+   "hospital_address": "700 NE 13th St, Oklahoma City, OK 73104",
+   "patient_name": "Morgan Placeholder",
+   "account_number": "FB-2026-000004",
+   "statement_date": "2026-09-11",
+   "service_date_start": "2026-08-21",
+   "service_date_end": "2026-08-21",
+   "payer": "Self-pay",
+   "visit_type": "Emergency visit",
+   "clinical_note": "Reason for visit: sore throat and cough, 2 days. Vitals normal, no fever. Rapid strep negative. Chest X-ray clear. Discharged home with instructions; no prescriptions.",
+   "lines": [
+    {
+     "line_no": 1,
+     "date_of_service": "2026-08-21",
+     "code": "99285",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Emergency department visit, life-threatening or high severity",
+     "units": 1.0,
+     "charge": 6795.0,
+     "patient_price": 679.5,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 809,
+      "x1": 1567,
+      "y1": 847
+     }
+    },
+    {
+     "line_no": 2,
+     "date_of_service": "2026-08-21",
+     "code": "36415",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Collection of venous blood, venipuncture",
+     "units": 1.0,
+     "charge": 90.0,
+     "patient_price": 9.0,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 857,
+      "x1": 1567,
+      "y1": 895
+     }
+    },
+    {
+     "line_no": 3,
+     "date_of_service": "2026-08-21",
+     "code": "80053",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Blood test, comprehensive group of chemicals",
+     "units": 1.0,
+     "charge": 1025.0,
+     "patient_price": 102.5,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 904,
+      "x1": 1567,
+      "y1": 942
+     }
+    },
+    {
+     "line_no": 4,
+     "date_of_service": "2026-08-21",
+     "code": "71046",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "X-ray of chest, 2 views",
+     "units": 1.0,
+     "charge": 683.0,
+     "patient_price": 68.3,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 951,
+      "x1": 1567,
+      "y1": 989
+     }
+    },
+    {
+     "line_no": 5,
+     "date_of_service": "2026-08-21",
+     "code": "93005",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Routine electrocardiogram, 12 leads, tracing",
+     "units": 1.0,
+     "charge": 532.0,
+     "patient_price": 53.2,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 998,
+      "x1": 1567,
+      "y1": 1036
+     }
+    },
+    {
+     "line_no": 6,
+     "date_of_service": "2026-08-21",
+     "code": "J7030",
+     "code_type": "HCPCS",
+     "modifier": null,
+     "description": "Normal saline solution infusion",
+     "units": 1.0,
+     "charge": 7.0,
+     "patient_price": 0.7,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 133,
+      "y0": 1045,
+      "x1": 1567,
+      "y1": 1083
+     }
+    }
+   ],
+   "total_charges": 9132.0,
+   "total_adjustments": 8218.8,
+   "patient_balance": 913.2,
+   "fictional_label_present": true,
+   "crops": {
+    "fictional_label_top": {
+     "page": 0,
+     "x0": 280,
+     "y0": 55,
+     "x1": 1419,
+     "y1": 86
+    },
+    "fictional_label_bottom": {
+     "page": 0,
+     "x0": 280,
+     "y0": 2088,
+     "x1": 1419,
+     "y1": 2119
+    },
+    "hospital_name": {
+     "page": 0,
+     "x0": 133,
+     "y0": 130,
+     "x1": 1151,
+     "y1": 191
+    },
+    "hospital_address": {
+     "page": 0,
+     "x0": 133,
+     "y0": 187,
+     "x1": 534,
+     "y1": 223
+    },
+    "patient_name": {
+     "page": 0,
+     "x0": 383,
+     "y0": 295,
+     "x1": 609,
+     "y1": 336
+    },
+    "account_number": {
+     "page": 0,
+     "x0": 383,
+     "y0": 331,
+     "x1": 576,
+     "y1": 372
+    },
+    "statement_date": {
+     "page": 0,
+     "x0": 383,
+     "y0": 367,
+     "x1": 518,
+     "y1": 408
+    },
+    "service_date_start": {
+     "page": 0,
+     "x0": 383,
+     "y0": 439,
+     "x1": 518,
+     "y1": 480
+    },
+    "payer": {
+     "page": 0,
+     "x0": 1216,
+     "y0": 439,
+     "x1": 1317,
+     "y1": 480
+    },
+    "clinical_note": {
+     "page": 0,
+     "x0": 155,
+     "y0": 583,
+     "x1": 1544,
+     "y1": 650
+    },
+    "total_charges": {
+     "page": 0,
+     "x0": 1445,
+     "y0": 1198,
+     "x1": 1544,
+     "y1": 1238
+    },
+    "total_adjustments": {
+     "page": 0,
+     "x0": 1437,
+     "y0": 1237,
+     "x1": 1544,
+     "y1": 1277
+    },
+    "patient_balance": {
+     "page": 0,
+     "x0": 1464,
+     "y0": 1276,
+     "x1": 1544,
+     "y1": 1316
+    },
+    "due_date": {
+     "page": 0,
+     "x0": 133,
+     "y0": 1236,
+     "x1": 419,
+     "y1": 1274
+    }
+   }
+  },
+  "planted": [
+   {
+    "kind": "upcoded",
+    "line_nos": [
+     1
+    ],
+    "summary": "The visit note describes a low-complexity visit, but the bill uses the highest emergency level (99285); the moderate level (99283) is $189.80 self-pay here.",
+    "evidence": [
+     {
+      "hospital_id": "ou_health_oumc",
+      "code": "99285",
+      "description": "EMERGENCY DEPARTMENT VISIT FOR LIFE THREATENING OR FUNCTIONING SEVERITY",
+      "setting": "outpatient",
+      "gross": 6795.0,
+      "discounted_cash": 679.5,
+      "source_line": 4045,
+      "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+      "fetched_on": "2026-09-13"
+     },
+     {
+      "hospital_id": "ou_health_oumc",
+      "code": "99283",
+      "description": "EMERGENCY DEPARTMENT VISIT FOR PROBLEM OF MODERATE SEVERITY",
+      "setting": "outpatient",
+      "gross": 1898.0,
+      "discounted_cash": 189.8,
+      "source_line": 4688,
+      "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+      "fetched_on": "2026-09-13"
+     }
+    ],
+    "amount_at_stake": 489.7,
+    "basis": "cash",
+    "needs_user_judgment": true,
+    "regulation": null,
+    "confidence": 1.0
+   }
+  ],
+  "clean": false,
+  "notes": [
+   "Patient 'Morgan Placeholder', account FB-2026-000004, patient address, statement/service dates and the billed line-up are fictional.",
+   "Every charge and self-pay price is a verbatim row of the hospital's published standard charges file; see the evidence source_url and source_line.",
+   "The billing error on this statement is planted for the demo; it is not a real hospital error.",
+   "The visit summary text is fictional and contains no real patient information."
+  ]
+ },
+ {
+  "id": "bill_05",
+  "hospital_id": "norman_regional",
+  "files": {
+   "pdf": "gallery/bills/bill_05.pdf",
+   "page": "gallery/bills/bill_05_page.png",
+   "photo": "gallery/bills/bill_05_photo.jpg"
+  },
+  "bill": {
+   "hospital_name": "Norman Regional Health System",
+   "hospital_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+   "patient_name": "Taylor Fictional",
+   "account_number": "FB-2026-000005",
+   "statement_date": "2026-07-01",
+   "service_date_start": "2026-06-10",
+   "service_date_end": "2026-06-10",
+   "payer": "Sooner Plains Health Plan (fictional)",
+   "visit_type": "Outpatient procedure",
+   "clinical_note": null,
+   "lines": [
+    {
+     "line_no": 1,
+     "date_of_service": "2026-06-10",
+     "code": "45378",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Colonoscopy, diagnostic",
+     "units": 1.0,
+     "charge": 2506.0,
+     "patient_price": 360.0,
+     "provider": null,
+     "network_note": "In-network facility",
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 587,
+      "x1": 1556,
+      "y1": 625
+     }
+    },
+    {
+     "line_no": 2,
+     "date_of_service": "2026-06-10",
+     "code": "J7030",
+     "code_type": "HCPCS",
+     "modifier": null,
+     "description": "Sodium chloride 1000 mL bag",
+     "units": 1.0,
+     "charge": 86.66,
+     "patient_price": 12.0,
+     "provider": null,
+     "network_note": "In-network facility",
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 634,
+      "x1": 1556,
+      "y1": 672
+     }
+    },
+    {
+     "line_no": 3,
+     "date_of_service": "2026-06-10",
+     "code": "00812",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Anesthesia for screening colonoscopy",
+     "units": 1.0,
+     "charge": 1850.0,
+     "patient_price": 1850.0,
+     "provider": "Red River Anesthesia Associates (fictional)",
+     "network_note": "OUT OF NETWORK: this provider is not contracted with your plan",
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 848,
+      "x1": 1556,
+      "y1": 886
+     }
+    }
+   ],
+   "total_charges": 4442.66,
+   "total_adjustments": 2220.66,
+   "patient_balance": 2222.0,
+   "fictional_label_present": true,
+   "crops": {
+    "fictional_label_top": {
+     "page": 0,
+     "x0": 280,
+     "y0": 61,
+     "x1": 1419,
+     "y1": 92
+    },
+    "fictional_label_bottom": {
+     "page": 0,
+     "x0": 280,
+     "y0": 2083,
+     "x1": 1419,
+     "y1": 2114
+    },
+    "hospital_name": {
+     "page": 0,
+     "x0": 144,
+     "y0": 143,
+     "x1": 799,
+     "y1": 201
+    },
+    "hospital_address": {
+     "page": 0,
+     "x0": 144,
+     "y0": 198,
+     "x1": 941,
+     "y1": 234
+    },
+    "patient_name": {
+     "page": 0,
+     "x0": 144,
+     "y0": 306,
+     "x1": 334,
+     "y1": 347
+    },
+    "account_number": {
+     "page": 0,
+     "x0": 855,
+     "y0": 306,
+     "x1": 1065,
+     "y1": 347
+    },
+    "statement_date": {
+     "page": 0,
+     "x0": 1216,
+     "y0": 306,
+     "x1": 1363,
+     "y1": 347
+    },
+    "service_date_start": {
+     "page": 0,
+     "x0": 855,
+     "y0": 389,
+     "x1": 1002,
+     "y1": 430
+    },
+    "payer": {
+     "page": 0,
+     "x0": 1216,
+     "y0": 391,
+     "x1": 1606,
+     "y1": 429
+    },
+    "network_note": {
+     "page": 0,
+     "x0": 144,
+     "y0": 752,
+     "x1": 894,
+     "y1": 790
+    },
+    "total_charges": {
+     "page": 0,
+     "x0": 1441,
+     "y0": 923,
+     "x1": 1550,
+     "y1": 963
+    },
+    "contractual": {
+     "page": 0,
+     "x0": 1462,
+     "y0": 962,
+     "x1": 1550,
+     "y1": 1002
+    },
+    "plan_paid": {
+     "page": 0,
+     "x0": 1441,
+     "y0": 1001,
+     "x1": 1550,
+     "y1": 1041
+    },
+    "cost_share": {
+     "page": 0,
+     "x0": 1462,
+     "y0": 1040,
+     "x1": 1550,
+     "y1": 1080
+    },
+    "balance_billed": {
+     "page": 0,
+     "x0": 1441,
+     "y0": 1079,
+     "x1": 1550,
+     "y1": 1119
+    },
+    "patient_balance": {
+     "page": 0,
+     "x0": 1441,
+     "y0": 1118,
+     "x1": 1550,
+     "y1": 1158
+    },
+    "due_date": {
+     "page": 0,
+     "x0": 144,
+     "y0": 1183,
+     "x1": 460,
+     "y1": 1221
+    }
+   }
+  },
+  "planted": [
+   {
+    "kind": "out_of_network",
+    "line_nos": [
+     3
+    ],
+    "summary": "Anesthesia delivered at an in-network facility is protected by the No Surprises Act; the patient owes at most the in-network cost share, not the $1,850.00 balance bill.",
+    "evidence": [],
+    "amount_at_stake": 1850.0,
+    "basis": "gross",
+    "needs_user_judgment": false,
+    "regulation": "No Surprises Act, 45 CFR 149.420 (non-emergency services by nonparticipating providers at participating facilities; anesthesiology cannot be balance-billed)",
+    "confidence": 1.0
+   }
+  ],
+  "clean": false,
+  "notes": [
+   "Patient 'Taylor Fictional', account FB-2026-000005, patient address, statement/service dates and the billed line-up are fictional.",
+   "Every charge and self-pay price is a verbatim row of the hospital's published standard charges file; see the evidence source_url and source_line.",
+   "The billing error on this statement is planted for the demo; it is not a real hospital error.",
+   "Health plan, professional provider, and the allowed / plan paid / cost-share amounts are fictional plan terms; no real payer contract is represented."
+  ]
+ },
+ {
+  "id": "bill_06",
+  "hospital_id": "norman_regional",
+  "files": {
+   "pdf": "gallery/bills/bill_06.pdf",
+   "page": "gallery/bills/bill_06_page.png",
+   "photo": "gallery/bills/bill_06_photo.jpg"
+  },
+  "bill": {
+   "hospital_name": "Norman Regional Health System",
+   "hospital_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+   "patient_name": "Alex Specimen",
+   "account_number": "FB-2026-000006",
+   "statement_date": "2026-07-29",
+   "service_date_start": "2026-07-08",
+   "service_date_end": "2026-07-08",
+   "payer": "Self-pay",
+   "visit_type": "Outpatient lab",
+   "clinical_note": null,
+   "lines": [
+    {
+     "line_no": 1,
+     "date_of_service": "2026-07-08",
+     "code": "36415",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Venipuncture",
+     "units": 1.0,
+     "charge": 46.0,
+     "patient_price": 27.6,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 562,
+      "x1": 1556,
+      "y1": 600
+     }
+    },
+    {
+     "line_no": 2,
+     "date_of_service": "2026-07-08",
+     "code": "85025",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Complete Blood Count (CBC)",
+     "units": 1.0,
+     "charge": 140.0,
+     "patient_price": 84.0,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 609,
+      "x1": 1556,
+      "y1": 647
+     }
+    },
+    {
+     "line_no": 3,
+     "date_of_service": "2026-07-08",
+     "code": "80053",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Comprehensive Metabolic Panel",
+     "units": 1.0,
+     "charge": 275.0,
+     "patient_price": 165.0,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 657,
+      "x1": 1556,
+      "y1": 695
+     }
+    },
+    {
+     "line_no": 4,
+     "date_of_service": "2026-07-08",
+     "code": "84443",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Thyroid Stimulating Hormone",
+     "units": 1.0,
+     "charge": 248.0,
+     "patient_price": 148.8,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 704,
+      "x1": 1556,
+      "y1": 742
+     }
+    },
+    {
+     "line_no": 5,
+     "date_of_service": "2026-07-08",
+     "code": "81001",
+     "code_type": "CPT",
+     "modifier": null,
+     "description": "Urinalysis, automated with microscopy",
+     "units": 1.0,
+     "charge": 164.0,
+     "patient_price": 98.4,
+     "provider": null,
+     "network_note": null,
+     "crop": {
+      "page": 0,
+      "x0": 144,
+      "y0": 751,
+      "x1": 1556,
+      "y1": 789
+     }
+    }
+   ],
+   "total_charges": 873.0,
+   "total_adjustments": 349.2,
+   "patient_balance": 523.8,
+   "fictional_label_present": true,
+   "crops": {
+    "fictional_label_top": {
+     "page": 0,
+     "x0": 280,
+     "y0": 61,
+     "x1": 1419,
+     "y1": 92
+    },
+    "fictional_label_bottom": {
+     "page": 0,
+     "x0": 280,
+     "y0": 2083,
+     "x1": 1419,
+     "y1": 2114
+    },
+    "hospital_name": {
+     "page": 0,
+     "x0": 144,
+     "y0": 143,
+     "x1": 799,
+     "y1": 201
+    },
+    "hospital_address": {
+     "page": 0,
+     "x0": 144,
+     "y0": 198,
+     "x1": 941,
+     "y1": 234
+    },
+    "patient_name": {
+     "page": 0,
+     "x0": 144,
+     "y0": 333,
+     "x1": 332,
+     "y1": 375
+    },
+    "account_number": {
+     "page": 0,
+     "x0": 855,
+     "y0": 333,
+     "x1": 1065,
+     "y1": 375
+    },
+    "statement_date": {
+     "page": 0,
+     "x0": 1216,
+     "y0": 333,
+     "x1": 1363,
+     "y1": 375
+    },
+    "service_date_start": {
+     "page": 0,
+     "x0": 855,
+     "y0": 417,
+     "x1": 1002,
+     "y1": 458
+    },
+    "payer": {
+     "page": 0,
+     "x0": 1216,
+     "y0": 417,
+     "x1": 1325,
+     "y1": 458
+    },
+    "total_charges": {
+     "page": 0,
+     "x0": 1447,
+     "y0": 814,
+     "x1": 1539,
+     "y1": 855
+    },
+    "total_adjustments": {
+     "page": 0,
+     "x0": 1438,
+     "y0": 856,
+     "x1": 1539,
+     "y1": 897
+    },
+    "patient_balance": {
+     "page": 0,
+     "x0": 1447,
+     "y0": 897,
+     "x1": 1539,
+     "y1": 938
+    },
+    "due_date": {
+     "page": 0,
+     "x0": 144,
+     "y0": 963,
+     "x1": 460,
+     "y1": 1002
+    }
+   }
+  },
+  "planted": [],
+  "clean": true,
+  "notes": [
+   "Patient 'Alex Specimen', account FB-2026-000006, patient address, statement/service dates and the billed line-up are fictional.",
+   "Every charge and self-pay price is a verbatim row of the hospital's published standard charges file; see the evidence source_url and source_line.",
+   "The billing error on this statement is planted for the demo; it is not a real hospital error.",
+   "This statement is clean: no error is planted."
+  ]
+ }
+]

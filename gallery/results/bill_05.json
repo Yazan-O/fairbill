@@ -1,0 +1,487 @@
+{
+  "bill_id": "bill_05",
+  "today": "2026-09-14",
+  "events": [
+    {
+      "step": "read",
+      "status": "start",
+      "payload": {
+        "bill_id": "bill_05",
+        "photo": "bill_05_photo.jpg"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "read",
+      "status": "ok",
+      "payload": {
+        "bill": {
+          "hospital_name": "Norman Regional Health System",
+          "hospital_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+          "patient_name": "Taylor Fictional",
+          "account_number": "FB-2026-000005",
+          "statement_date": "2026-07-01",
+          "service_date_start": "2026-06-10",
+          "service_date_end": "2026-06-10",
+          "payer": "Sooner Plains Health Plan (fictional)",
+          "visit_type": "Outpatient procedure",
+          "clinical_note": null,
+          "lines": [
+            {
+              "line_no": 1,
+              "date_of_service": "2026-06-10",
+              "code": "45378",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Colonoscopy, diagnostic",
+              "units": 1.0,
+              "charge": 2506.0,
+              "patient_price": 360.0,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            },
+            {
+              "line_no": 2,
+              "date_of_service": "2026-06-10",
+              "code": "J7030",
+              "code_type": "HCPCS",
+              "modifier": null,
+              "description": "Sodium chloride 1000 mL bag",
+              "units": 1.0,
+              "charge": 86.66,
+              "patient_price": 12.0,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            },
+            {
+              "line_no": 3,
+              "date_of_service": "2026-06-10",
+              "code": "00812",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Anesthesia for screening colonoscopy",
+              "units": 1.0,
+              "charge": 1850.0,
+              "patient_price": 1850.0,
+              "provider": "Red River Anesthesia Associates (fictional)",
+              "network_note": "OUT OF NETWORK: this provider is not contracted with your plan",
+              "crop": null
+            }
+          ],
+          "total_charges": 4442.66,
+          "total_adjustments": 732.66,
+          "patient_balance": 2222.0,
+          "fictional_label_present": true,
+          "crops": {}
+        },
+        "notes": [
+          "attempt 1 on global.anthropic.claude-sonnet-4-6 failed: ModelThrottledException: An error occurred (ThrottlingException) when calling the ConverseStream operation (reached max retries: 4): Too many tokens per day, please wait before trying a",
+          "attempt 2 on global.anthropic.claude-sonnet-4-6 failed: ModelThrottledException: An error occurred (ThrottlingException) when calling the ConverseStream operation (reached max retries: 4): Too many tokens per day, please wait before trying a",
+          "primary model failed twice; read with the fallback model"
+        ]
+      },
+      "seconds": 366.28
+    },
+    {
+      "step": "fetch",
+      "status": "start",
+      "payload": {
+        "live": true
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "fetch",
+      "status": "ok",
+      "payload": {
+        "hospital_id": "norman_regional",
+        "url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+        "status": "live",
+        "bytes": 39141747,
+        "total_bytes": 39141747,
+        "seconds": 4.18,
+        "sha256": "4b79577f0859aadc9ab9db6aa53b221edf433592ed1406c201a3336b5156bf9f",
+        "matched_fixture": true,
+        "note": ""
+      },
+      "seconds": 7.57
+    },
+    {
+      "step": "audit",
+      "status": "start",
+      "payload": {
+        "hospital_id": "norman_regional"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "audit",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_05",
+        "hospital_id": "norman_regional",
+        "findings": [
+          {
+            "kind": "out_of_network",
+            "line_nos": [
+              3
+            ],
+            "summary": "Red River Anesthesia Associates is out of network; anesthesia for your screening colonoscopy was provided by an out-of-network provider at an in-network facility.",
+            "evidence": [],
+            "amount_at_stake": 1850.0,
+            "basis": "gross",
+            "needs_user_judgment": false,
+            "regulation": "No Surprises Act, 45 CFR 149.420 (non-emergency services by nonparticipating providers at participating facilities; anesthesiology cannot be balance-billed)",
+            "confidence": 1.0
+          }
+        ],
+        "clean": false,
+        "file_used": {
+          "hospital_id": "norman_regional",
+          "code": "45378",
+          "description": "Colonoscopy, Diagnostic",
+          "setting": "both",
+          "gross": 2506.0,
+          "discounted_cash": 1503.6,
+          "source_line": 15227,
+          "source_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+          "fetched_on": "2026-09-13"
+        },
+        "notes": [
+          "rights_specialist: primary model failed, fallback model used",
+          "coding_specialist: primary model failed, fallback model used",
+          "line_matcher: primary model failed, fallback model used"
+        ],
+        "status": "audited"
+      },
+      "seconds": 41.23
+    },
+    {
+      "step": "card",
+      "status": "start",
+      "payload": {
+        "bill_id": "bill_05",
+        "status": "audited"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "card",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_05",
+        "situation": "Line 3 (Anesthesia for screening colonoscopy) was billed by an out-of-network provider at an in-network facility, leaving $1,850.00 the No Surprises Act says you should not owe.",
+        "status": "audited",
+        "options": [
+          {
+            "id": "dispute",
+            "label": "Send the No Surprises Act notice",
+            "consequence": "Cites 45 CFR 149.420; provider may bill only in-network cost sharing"
+          },
+          {
+            "id": "pay_in_network",
+            "label": "Pay only the in-network share",
+            "consequence": "Pay what the plan says you owe for in-network care; keep the letter on file"
+          },
+          {
+            "id": "drop",
+            "label": "Pay as billed",
+            "consequence": "You accept the charge"
+          }
+        ],
+        "default_option": "dispute",
+        "deadline": "2027-01-12",
+        "deadline_reason": "The statement's due date, 2026-07-31, has passed; act today and ask billing to pause collection while the dispute is open",
+        "evidence_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+        "evidence_lines": [
+          15227
+        ],
+        "amount_at_stake": 1850.0,
+        "basis": "gross",
+        "needs_user_judgment": false,
+        "clean": false,
+        "kind": "out_of_network"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "done",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_05",
+        "clean": false,
+        "amount_at_stake": 1850.0
+      },
+      "seconds": 415.07
+    }
+  ],
+  "bill": {
+    "hospital_name": "Norman Regional Health System",
+    "hospital_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+    "patient_name": "Taylor Fictional",
+    "account_number": "FB-2026-000005",
+    "statement_date": "2026-07-01",
+    "service_date_start": "2026-06-10",
+    "service_date_end": "2026-06-10",
+    "payer": "Sooner Plains Health Plan (fictional)",
+    "visit_type": "Outpatient procedure",
+    "clinical_note": null,
+    "lines": [
+      {
+        "line_no": 1,
+        "date_of_service": "2026-06-10",
+        "code": "45378",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Colonoscopy, diagnostic",
+        "units": 1.0,
+        "charge": 2506.0,
+        "patient_price": 360.0,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      },
+      {
+        "line_no": 2,
+        "date_of_service": "2026-06-10",
+        "code": "J7030",
+        "code_type": "HCPCS",
+        "modifier": null,
+        "description": "Sodium chloride 1000 mL bag",
+        "units": 1.0,
+        "charge": 86.66,
+        "patient_price": 12.0,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      },
+      {
+        "line_no": 3,
+        "date_of_service": "2026-06-10",
+        "code": "00812",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Anesthesia for screening colonoscopy",
+        "units": 1.0,
+        "charge": 1850.0,
+        "patient_price": 1850.0,
+        "provider": "Red River Anesthesia Associates (fictional)",
+        "network_note": "OUT OF NETWORK: this provider is not contracted with your plan",
+        "crop": null
+      }
+    ],
+    "total_charges": 4442.66,
+    "total_adjustments": 732.66,
+    "patient_balance": 2222.0,
+    "fictional_label_present": true,
+    "crops": {}
+  },
+  "audit": {
+    "bill_id": "bill_05",
+    "hospital_id": "norman_regional",
+    "findings": [
+      {
+        "kind": "out_of_network",
+        "line_nos": [
+          3
+        ],
+        "summary": "Red River Anesthesia Associates is out of network; anesthesia for your screening colonoscopy was provided by an out-of-network provider at an in-network facility.",
+        "evidence": [],
+        "amount_at_stake": 1850.0,
+        "basis": "gross",
+        "needs_user_judgment": false,
+        "regulation": "No Surprises Act, 45 CFR 149.420 (non-emergency services by nonparticipating providers at participating facilities; anesthesiology cannot be balance-billed)",
+        "confidence": 1.0
+      }
+    ],
+    "clean": false,
+    "file_used": {
+      "hospital_id": "norman_regional",
+      "code": "45378",
+      "description": "Colonoscopy, Diagnostic",
+      "setting": "both",
+      "gross": 2506.0,
+      "discounted_cash": 1503.6,
+      "source_line": 15227,
+      "source_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+      "fetched_on": "2026-09-13"
+    },
+    "notes": [
+      "rights_specialist: primary model failed, fallback model used",
+      "coding_specialist: primary model failed, fallback model used",
+      "line_matcher: primary model failed, fallback model used"
+    ],
+    "status": "audited"
+  },
+  "card": {
+    "bill_id": "bill_05",
+    "situation": "Line 3 (Anesthesia for screening colonoscopy) was billed by an out-of-network provider at an in-network facility, leaving $1,850.00 the No Surprises Act says you should not owe.",
+    "status": "audited",
+    "options": [
+      {
+        "id": "dispute",
+        "label": "Send the No Surprises Act notice",
+        "consequence": "Cites 45 CFR 149.420; provider may bill only in-network cost sharing"
+      },
+      {
+        "id": "pay_in_network",
+        "label": "Pay only the in-network share",
+        "consequence": "Pay what the plan says you owe for in-network care; keep the letter on file"
+      },
+      {
+        "id": "drop",
+        "label": "Pay as billed",
+        "consequence": "You accept the charge"
+      }
+    ],
+    "default_option": "dispute",
+    "deadline": "2027-01-12",
+    "deadline_reason": "The statement's due date, 2026-07-31, has passed; act today and ask billing to pause collection while the dispute is open",
+    "evidence_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+    "evidence_lines": [
+      15227
+    ],
+    "amount_at_stake": 1850.0,
+    "basis": "gross",
+    "needs_user_judgment": false,
+    "clean": false,
+    "kind": "out_of_network"
+  },
+  "ics": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Fairbill//Decision deadline//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:bill_05-2027-01-12-out_of_network@fairbill.local\r\nDTSTAMP:20260914T090301Z\r\nDTSTART;VALUE=DATE:20270112\r\nDTEND;VALUE=DATE:20270113\r\nSUMMARY:Fairbill: bill_05 response deadline (out_of_network)\r\nDESCRIPTION:The statement's due date\\, 2026-07-31\\, has passed\\; act today \r\n and ask billing to pause collection while the dispute is open. Evidence: h\r\n ttps://www.normanregional.com/documents/PFS/736048282_norman-regional-heal\r\n th-system_standardcharges.csv\r\nLOCATION:Norman Regional Health System\r\nTRANSP:TRANSPARENT\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n",
+  "letter": {
+    "bill_id": "bill_05",
+    "kind": "nsa_complaint",
+    "to_name": "Norman Regional Health System",
+    "to_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+    "from_name": "Taylor Fictional",
+    "re_line": "Re: No Surprises Act Complaint - Account FB-2026-000005",
+    "body": "Dear Billing Office,\n\nI am writing to dispute charges on my statement dated 2026-07-01 under the No Surprises Act.\n\nLine 3 of my bill shows anesthesia for screening colonoscopy billed at $1,850.00. This service was provided by an out-of-network anesthesiologist at your in-network facility. Under 45 CFR 180.50 and 45 CFR 149.420, I should not owe out-of-network charges when an out-of-network provider delivers care at an in-network facility without my knowledge.\n\nYour price file row 15227 lists the colonoscopy procedure (code 45378) with a discounted cash price of $1,503.60. I owe only the in-network cost sharing for the anesthesia line, not the full $1,850.00 billed amount.\n\nI ask that you:\n\n- Recalculate my bill to reflect only in-network cost sharing for line 3\n- Pause collection efforts on this $1,850.00 amount while this dispute is open\n- Respond by 2027-01-12 with an explanation of how you will resolve this\n\nThe original statement due date has passed. I am acting in good faith to resolve this promptly and ask for your cooperation in pausing collection while we work through this complaint.\n\nSincerely,\nTaylor Fictional\n\nSources:\n- The hospital's own standard-charges file, row 15227: 45378 Colonoscopy, Diagnostic, posted gross $2,506.00, discounted cash price $1,503.60 (file fetched 2026-09-13). https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv\n- 45 CFR 180.50 requires this hospital to publish its standard charges, including the discounted cash price, in a machine-readable file. https://www.ecfr.gov/current/title-45/part-180\n- 45 CFR 149.420 (No Surprises Act) limits a nonparticipating provider at a participating facility to the in-network cost-sharing amount. https://www.ecfr.gov/current/title-45/part-149",
+    "citations": [
+      "row 15227",
+      "45 CFR 180.50",
+      "45 CFR 149.420"
+    ],
+    "footer": "Fairbill drafts letters from public price data. This is not legal advice. Patient names in this demo are fictional."
+  },
+  "letter_text": "2026-09-14\n\nNorman Regional Health System\nNorman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126\n\nRe: No Surprises Act Complaint - Account FB-2026-000005\n\nDear Billing Office,\n\nI am writing to dispute charges on my statement dated 2026-07-01 under the No Surprises Act.\n\nLine 3 of my bill shows anesthesia for screening colonoscopy billed at $1,850.00. This service was provided by an out-of-network anesthesiologist at your in-network facility. Under 45 CFR 180.50 and 45 CFR 149.420, I should not owe out-of-network charges when an out-of-network provider delivers care at an in-network facility without my knowledge.\n\nYour price file row 15227 lists the colonoscopy procedure (code 45378) with a discounted cash price of $1,503.60. I owe only the in-network cost sharing for the anesthesia line, not the full $1,850.00 billed amount.\n\nI ask that you:\n\n- Recalculate my bill to reflect only in-network cost sharing for line 3\n- Pause collection efforts on this $1,850.00 amount while this dispute is open\n- Respond by 2027-01-12 with an explanation of how you will resolve this\n\nThe original statement due date has passed. I am acting in good faith to resolve this promptly and ask for your cooperation in pausing collection while we work through this complaint.\n\nSincerely,\nTaylor Fictional\n\nSources:\n- The hospital's own standard-charges file, row 15227: 45378 Colonoscopy, Diagnostic, posted gross $2,506.00, discounted cash price $1,503.60 (file fetched 2026-09-13). https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv\n- 45 CFR 180.50 requires this hospital to publish its standard charges, including the discounted cash price, in a machine-readable file. https://www.ecfr.gov/current/title-45/part-180\n- 45 CFR 149.420 (No Surprises Act) limits a nonparticipating provider at a participating facility to the in-network cost-sharing amount. https://www.ecfr.gov/current/title-45/part-149\n\nFairbill drafts letters from public price data. This is not legal advice. Patient names in this demo are fictional.\n",
+  "ledger": [
+    {
+      "id": "ba355feb3311",
+      "ts": "2026-09-14T06:15:20.232066+00:00",
+      "session_id": "precompute_bill_05",
+      "bill_id": "bill_05",
+      "action": "read",
+      "why": "read bill_05_photo.jpg",
+      "evidence": [
+        "bill_05_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "3c1abfc9b944",
+      "ts": "2026-09-14T06:15:20.245959+00:00",
+      "session_id": "precompute_bill_05",
+      "bill_id": "bill_05",
+      "action": "fetch",
+      "why": "fixture fetch of the hospital price file",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "7fd9c08227c5",
+      "ts": "2026-09-14T06:15:28.832568+00:00",
+      "session_id": "precompute_bill_05",
+      "bill_id": "bill_05",
+      "action": "audit",
+      "why": "1 finding(s) against the hospital's file",
+      "evidence": [],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "8c4bc55194fd",
+      "ts": "2026-09-14T06:15:28.835989+00:00",
+      "session_id": "precompute_bill_05",
+      "bill_id": "bill_05",
+      "action": "card",
+      "why": "decision card, default dispute",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "6467389ef6a5",
+      "ts": "2026-09-14T09:02:12.345133+00:00",
+      "session_id": "precompute_bill_05",
+      "bill_id": "bill_05",
+      "action": "read",
+      "why": "read bill_05_photo.jpg",
+      "evidence": [
+        "bill_05_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "18acb4c03145",
+      "ts": "2026-09-14T09:02:19.901025+00:00",
+      "session_id": "precompute_bill_05",
+      "bill_id": "bill_05",
+      "action": "fetch",
+      "why": "live fetch of the hospital price file",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "fb895ab67ac1",
+      "ts": "2026-09-14T09:03:01.135940+00:00",
+      "session_id": "precompute_bill_05",
+      "bill_id": "bill_05",
+      "action": "audit",
+      "why": "1 finding(s) against the hospital's file",
+      "evidence": [],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "23d56e058396",
+      "ts": "2026-09-14T09:03:01.139351+00:00",
+      "session_id": "precompute_bill_05",
+      "bill_id": "bill_05",
+      "action": "card",
+      "why": "decision card, default dispute",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    }
+  ]
+}

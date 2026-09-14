@@ -1,0 +1,65 @@
+{
+  "_comment": "Hospital registry used by tier-0 triage (no model call). Every entry maps name variants and NPIs to the hospital's published standard-charges file. Sources and fetch dates: data/SOURCES.md.",
+  "hospitals": [
+    {
+      "id": "norman_regional",
+      "name": "Norman Regional Health System",
+      "aliases": [
+        "Norman Regional",
+        "Norman Regional Hospital",
+        "Norman Regional Moore",
+        "Norman Regional Nine",
+        "NRHS",
+        "Norman Regional HealthPlex"
+      ],
+      "npis": [
+        "1700882578",
+        "1568085504"
+      ],
+      "ein": "73-6048282",
+      "state": "OK",
+      "addresses": [
+        "901 North Porter, Norman, OK 73070",
+        "3300 HealthPlex Parkway, Norman, OK 73072",
+        "700 S Telephone RD, Moore, OK 73160",
+        "2000 Ann Braden Blvd, Norman, OK 73071"
+      ],
+      "transparency_page": "https://www.normanregional.com/pay-your-bill/price-transparency/",
+      "mrf_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+      "mrf_format": "csv-tall",
+      "mrf_compressed": false,
+      "fixture": "data/fixtures/norman_regional_slice.json",
+      "billing_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126"
+    },
+    {
+      "id": "ou_health_oumc",
+      "name": "OU Health - University of Oklahoma Medical Center",
+      "aliases": [
+        "OU Health",
+        "OU Medical Center",
+        "University of Oklahoma Medical Center",
+        "OUMC",
+        "Oklahoma Childrens Hospital OU Health",
+        "OU Health Edmond Medical Center",
+        "OU Medicine"
+      ],
+      "npis": [
+        "1649794157",
+        "1609390111"
+      ],
+      "ein": "82-1883948",
+      "state": "OK",
+      "addresses": [
+        "700 NE 13th St, Oklahoma City, OK 73104",
+        "1200 Childrens Ave, Oklahoma City, OK 73104",
+        "One South Bryant Ave, Edmond, OK 73034"
+      ],
+      "transparency_page": "https://www.ouhealth.com/ou-health-patients-families/insurance-billing/billing-ou-health/hospital-charges-pricing-transparency/",
+      "mrf_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+      "mrf_format": "csv-wide",
+      "mrf_compressed": true,
+      "fixture": "data/fixtures/ou_health_slice.json",
+      "billing_address": "OU Health, Patient Financial Services, 700 NE 13th St, Oklahoma City, OK 73104"
+    }
+  ]
+}

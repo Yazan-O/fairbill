@@ -1,0 +1,30 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# run artifacts and scratch
+_runs/
+.playwright/
+
+# large raw downloads (fixtures in data/fixtures/ are committed)
+data/raw/
+
+# build artifacts of the Lambda proxy bundle, rebuilt by deploy/bundle_proxy.py
+node_modules/
+deploy/lambda_proxy/static/
+deploy/lambda_proxy/gallery/
+deploy/lambda_proxy/prebaked/
+*.zip
+
+# agentcore cli state
+.agentcore/
+
+# local agent config (not part of the product)
+.claude/

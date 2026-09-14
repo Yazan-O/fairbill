@@ -1,0 +1,10 @@
+{
+  "name": "fairbill-proxy",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "main": "index.mjs",
+  "dependencies": {
+    "@aws-sdk/client-bedrock-agentcore": "3.1131.0"
+  }
+}

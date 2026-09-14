@@ -1,0 +1,483 @@
+{
+  "bill_id": "bill_06",
+  "today": "2026-09-14",
+  "events": [
+    {
+      "step": "read",
+      "status": "start",
+      "payload": {
+        "bill_id": "bill_06",
+        "photo": "bill_06_photo.jpg"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "read",
+      "status": "ok",
+      "payload": {
+        "bill": {
+          "hospital_name": "Norman Regional Health System",
+          "hospital_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+          "patient_name": "Alex Specimen",
+          "account_number": "FB-2026-000006",
+          "statement_date": "2026-07-29",
+          "service_date_start": "2026-07-08",
+          "service_date_end": "2026-07-08",
+          "payer": "Self-pay",
+          "visit_type": "Outpatient lab",
+          "clinical_note": null,
+          "lines": [
+            {
+              "line_no": 1,
+              "date_of_service": "2026-07-08",
+              "code": "36415",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Venipuncture",
+              "units": 1.0,
+              "charge": 46.0,
+              "patient_price": 27.6,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            },
+            {
+              "line_no": 2,
+              "date_of_service": "2026-07-08",
+              "code": "85025",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Complete Blood Count (CBC)",
+              "units": 1.0,
+              "charge": 140.0,
+              "patient_price": 84.0,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            },
+            {
+              "line_no": 3,
+              "date_of_service": "2026-07-08",
+              "code": "80053",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Comprehensive Metabolic Panel",
+              "units": 1.0,
+              "charge": 275.0,
+              "patient_price": 165.0,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            },
+            {
+              "line_no": 4,
+              "date_of_service": "2026-07-08",
+              "code": "84443",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Thyroid Stimulating Hormone",
+              "units": 1.0,
+              "charge": 248.0,
+              "patient_price": 148.8,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            },
+            {
+              "line_no": 5,
+              "date_of_service": "2026-07-08",
+              "code": "81001",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Urinalysis, automated with microscopy",
+              "units": 1.0,
+              "charge": 164.0,
+              "patient_price": 98.4,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            }
+          ],
+          "total_charges": 873.0,
+          "total_adjustments": -349.2,
+          "patient_balance": 523.8,
+          "fictional_label_present": true,
+          "crops": {}
+        },
+        "notes": [
+          "attempt 1 on global.anthropic.claude-sonnet-4-6 failed: ModelThrottledException: An error occurred (ThrottlingException) when calling the ConverseStream operation (reached max retries: 4): Too many tokens per day, please wait before trying a",
+          "attempt 2 on global.anthropic.claude-sonnet-4-6 failed: ModelThrottledException: An error occurred (ThrottlingException) when calling the ConverseStream operation (reached max retries: 4): Too many tokens per day, please wait before trying a",
+          "primary model failed twice; read with the fallback model"
+        ]
+      },
+      "seconds": 369.09
+    },
+    {
+      "step": "fetch",
+      "status": "start",
+      "payload": {
+        "live": true
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "fetch",
+      "status": "ok",
+      "payload": {
+        "hospital_id": "norman_regional",
+        "url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+        "status": "live",
+        "bytes": 39141747,
+        "total_bytes": 39141747,
+        "seconds": 2.66,
+        "sha256": "4b79577f0859aadc9ab9db6aa53b221edf433592ed1406c201a3336b5156bf9f",
+        "matched_fixture": true,
+        "note": ""
+      },
+      "seconds": 6.0
+    },
+    {
+      "step": "audit",
+      "status": "start",
+      "payload": {
+        "hospital_id": "norman_regional"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "audit",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_06",
+        "hospital_id": "norman_regional",
+        "findings": [],
+        "clean": true,
+        "file_used": {
+          "hospital_id": "norman_regional",
+          "code": "36415",
+          "description": "Venipuncture Charge",
+          "setting": "both",
+          "gross": 46.0,
+          "discounted_cash": 27.6,
+          "source_line": 13718,
+          "source_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+          "fetched_on": "2026-09-13"
+        },
+        "notes": [
+          "rights_specialist: primary model failed, fallback model used",
+          "line_matcher: primary model failed, fallback model used",
+          "coding_specialist: primary model failed, fallback model used",
+          "dropped above_cash on lines [1] from line_matcher: the price charged is not above the posted cash price"
+        ],
+        "status": "audited"
+      },
+      "seconds": 48.87
+    },
+    {
+      "step": "card",
+      "status": "start",
+      "payload": {
+        "bill_id": "bill_06",
+        "status": "audited"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "card",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_06",
+        "situation": "This bill matches the hospital's published prices line by line. Nothing to dispute.",
+        "status": "audited",
+        "options": [
+          {
+            "id": "drop",
+            "label": "Close the case",
+            "consequence": "Nothing is sent; the check is logged"
+          }
+        ],
+        "default_option": "drop",
+        "deadline": "2026-09-14",
+        "deadline_reason": "The statement's due date, 2026-08-28, has passed; act today and ask billing to pause collection while the dispute is open",
+        "evidence_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+        "evidence_lines": [
+          13718
+        ],
+        "amount_at_stake": 0.0,
+        "basis": "unknown",
+        "needs_user_judgment": false,
+        "clean": true,
+        "kind": null
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "done",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_06",
+        "clean": true,
+        "amount_at_stake": 0.0
+      },
+      "seconds": 423.96
+    }
+  ],
+  "bill": {
+    "hospital_name": "Norman Regional Health System",
+    "hospital_address": "Norman Regional Hospital Authority, P.O. Box 268961, Oklahoma City, OK 73126",
+    "patient_name": "Alex Specimen",
+    "account_number": "FB-2026-000006",
+    "statement_date": "2026-07-29",
+    "service_date_start": "2026-07-08",
+    "service_date_end": "2026-07-08",
+    "payer": "Self-pay",
+    "visit_type": "Outpatient lab",
+    "clinical_note": null,
+    "lines": [
+      {
+        "line_no": 1,
+        "date_of_service": "2026-07-08",
+        "code": "36415",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Venipuncture",
+        "units": 1.0,
+        "charge": 46.0,
+        "patient_price": 27.6,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      },
+      {
+        "line_no": 2,
+        "date_of_service": "2026-07-08",
+        "code": "85025",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Complete Blood Count (CBC)",
+        "units": 1.0,
+        "charge": 140.0,
+        "patient_price": 84.0,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      },
+      {
+        "line_no": 3,
+        "date_of_service": "2026-07-08",
+        "code": "80053",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Comprehensive Metabolic Panel",
+        "units": 1.0,
+        "charge": 275.0,
+        "patient_price": 165.0,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      },
+      {
+        "line_no": 4,
+        "date_of_service": "2026-07-08",
+        "code": "84443",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Thyroid Stimulating Hormone",
+        "units": 1.0,
+        "charge": 248.0,
+        "patient_price": 148.8,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      },
+      {
+        "line_no": 5,
+        "date_of_service": "2026-07-08",
+        "code": "81001",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Urinalysis, automated with microscopy",
+        "units": 1.0,
+        "charge": 164.0,
+        "patient_price": 98.4,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      }
+    ],
+    "total_charges": 873.0,
+    "total_adjustments": -349.2,
+    "patient_balance": 523.8,
+    "fictional_label_present": true,
+    "crops": {}
+  },
+  "audit": {
+    "bill_id": "bill_06",
+    "hospital_id": "norman_regional",
+    "findings": [],
+    "clean": true,
+    "file_used": {
+      "hospital_id": "norman_regional",
+      "code": "36415",
+      "description": "Venipuncture Charge",
+      "setting": "both",
+      "gross": 46.0,
+      "discounted_cash": 27.6,
+      "source_line": 13718,
+      "source_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+      "fetched_on": "2026-09-13"
+    },
+    "notes": [
+      "rights_specialist: primary model failed, fallback model used",
+      "line_matcher: primary model failed, fallback model used",
+      "coding_specialist: primary model failed, fallback model used",
+      "dropped above_cash on lines [1] from line_matcher: the price charged is not above the posted cash price"
+    ],
+    "status": "audited"
+  },
+  "card": {
+    "bill_id": "bill_06",
+    "situation": "This bill matches the hospital's published prices line by line. Nothing to dispute.",
+    "status": "audited",
+    "options": [
+      {
+        "id": "drop",
+        "label": "Close the case",
+        "consequence": "Nothing is sent; the check is logged"
+      }
+    ],
+    "default_option": "drop",
+    "deadline": "2026-09-14",
+    "deadline_reason": "The statement's due date, 2026-08-28, has passed; act today and ask billing to pause collection while the dispute is open",
+    "evidence_url": "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv",
+    "evidence_lines": [
+      13718
+    ],
+    "amount_at_stake": 0.0,
+    "basis": "unknown",
+    "needs_user_judgment": false,
+    "clean": true,
+    "kind": null
+  },
+  "ics": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Fairbill//Decision deadline//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:bill_06-2026-09-14-clean@fairbill.local\r\nDTSTAMP:20260914T091549Z\r\nDTSTART;VALUE=DATE:20260914\r\nDTEND;VALUE=DATE:20260915\r\nSUMMARY:Fairbill: bill_06 response deadline (clean)\r\nDESCRIPTION:The statement's due date\\, 2026-08-28\\, has passed\\; act today \r\n and ask billing to pause collection while the dispute is open. Evidence: h\r\n ttps://www.normanregional.com/documents/PFS/736048282_norman-regional-heal\r\n th-system_standardcharges.csv\r\nLOCATION:Norman Regional Health System\r\nTRANSP:TRANSPARENT\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n",
+  "letter": null,
+  "letter_text": null,
+  "ledger": [
+    {
+      "id": "763dfac30a2d",
+      "ts": "2026-09-14T06:15:57.330376+00:00",
+      "session_id": "precompute_bill_06",
+      "bill_id": "bill_06",
+      "action": "read",
+      "why": "read bill_06_photo.jpg",
+      "evidence": [
+        "bill_06_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "009a441216b0",
+      "ts": "2026-09-14T06:15:57.335860+00:00",
+      "session_id": "precompute_bill_06",
+      "bill_id": "bill_06",
+      "action": "fetch",
+      "why": "fixture fetch of the hospital price file",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "014f4fb39879",
+      "ts": "2026-09-14T06:16:06.219450+00:00",
+      "session_id": "precompute_bill_06",
+      "bill_id": "bill_06",
+      "action": "audit",
+      "why": "0 finding(s) against the hospital's file",
+      "evidence": [],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "cb63b9728ef8",
+      "ts": "2026-09-14T06:16:06.230659+00:00",
+      "session_id": "precompute_bill_06",
+      "bill_id": "bill_06",
+      "action": "card",
+      "why": "decision card, default drop",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "4be5a73017e1",
+      "ts": "2026-09-14T09:14:54.444263+00:00",
+      "session_id": "precompute_bill_06",
+      "bill_id": "bill_06",
+      "action": "read",
+      "why": "read bill_06_photo.jpg",
+      "evidence": [
+        "bill_06_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "772246df6055",
+      "ts": "2026-09-14T09:15:00.450469+00:00",
+      "session_id": "precompute_bill_06",
+      "bill_id": "bill_06",
+      "action": "fetch",
+      "why": "live fetch of the hospital price file",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "773d09a68764",
+      "ts": "2026-09-14T09:15:49.308017+00:00",
+      "session_id": "precompute_bill_06",
+      "bill_id": "bill_06",
+      "action": "audit",
+      "why": "0 finding(s) against the hospital's file",
+      "evidence": [],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "28b69650af65",
+      "ts": "2026-09-14T09:15:49.319288+00:00",
+      "session_id": "precompute_bill_06",
+      "bill_id": "bill_06",
+      "action": "card",
+      "why": "decision card, default drop",
+      "evidence": [
+        "https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    }
+  ]
+}

@@ -1,0 +1,891 @@
+{
+  "bill_id": "bill_03",
+  "today": "2026-09-14",
+  "events": [
+    {
+      "step": "read",
+      "status": "start",
+      "payload": {
+        "bill_id": "bill_03",
+        "photo": "bill_03_photo.jpg"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "read",
+      "status": "ok",
+      "payload": {
+        "bill": {
+          "hospital_name": "OU Health - University of Oklahoma Medical Center",
+          "hospital_address": "700 NE 13th St, Oklahoma City, OK 73104",
+          "patient_name": "Riley Demo",
+          "account_number": "FB-2026-000003",
+          "statement_date": "2026-08-24",
+          "service_date_start": "2026-08-03",
+          "service_date_end": "2026-08-03",
+          "payer": "Self-pay",
+          "visit_type": "Outpatient lab",
+          "clinical_note": null,
+          "lines": [
+            {
+              "line_no": 1,
+              "date_of_service": "2026-08-03",
+              "code": "36415",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Collection of venous blood, venipuncture",
+              "units": 1.0,
+              "charge": 90.0,
+              "patient_price": 9.0,
+              "provider": null,
+              "network_note": null,
+              "crop": {
+                "page": 0,
+                "x0": 62,
+                "y0": 490,
+                "x1": 1430,
+                "y1": 520
+              }
+            },
+            {
+              "line_no": 2,
+              "date_of_service": "2026-08-03",
+              "code": "85027",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Complete blood cell count, automated",
+              "units": 1.0,
+              "charge": 257.0,
+              "patient_price": 25.7,
+              "provider": null,
+              "network_note": null,
+              "crop": {
+                "page": 0,
+                "x0": 62,
+                "y0": 528,
+                "x1": 1430,
+                "y1": 558
+              }
+            },
+            {
+              "line_no": 3,
+              "date_of_service": "2026-08-03",
+              "code": "85018",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Hemoglobin",
+              "units": 1.0,
+              "charge": 113.0,
+              "patient_price": 11.3,
+              "provider": null,
+              "network_note": null,
+              "crop": {
+                "page": 0,
+                "x0": 62,
+                "y0": 566,
+                "x1": 1430,
+                "y1": 596
+              }
+            },
+            {
+              "line_no": 4,
+              "date_of_service": "2026-08-03",
+              "code": "85014",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Red blood cell concentration (hematocrit)",
+              "units": 1.0,
+              "charge": 123.0,
+              "patient_price": 12.3,
+              "provider": null,
+              "network_note": null,
+              "crop": {
+                "page": 0,
+                "x0": 62,
+                "y0": 604,
+                "x1": 1430,
+                "y1": 634
+              }
+            },
+            {
+              "line_no": 5,
+              "date_of_service": "2026-08-03",
+              "code": "85007",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Microscopic exam, white cells, manual differential",
+              "units": 1.0,
+              "charge": 636.0,
+              "patient_price": 63.6,
+              "provider": null,
+              "network_note": null,
+              "crop": {
+                "page": 0,
+                "x0": 62,
+                "y0": 642,
+                "x1": 1430,
+                "y1": 672
+              }
+            },
+            {
+              "line_no": 6,
+              "date_of_service": "2026-08-03",
+              "code": "80053",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Blood test, comprehensive group of chemicals",
+              "units": 1.0,
+              "charge": 1025.0,
+              "patient_price": 102.5,
+              "provider": null,
+              "network_note": null,
+              "crop": {
+                "page": 0,
+                "x0": 62,
+                "y0": 680,
+                "x1": 1430,
+                "y1": 710
+              }
+            }
+          ],
+          "total_charges": 2244.0,
+          "total_adjustments": -2019.6,
+          "patient_balance": 224.4,
+          "fictional_label_present": true,
+          "crops": {
+            "hospital_name": {
+              "page": 0,
+              "x0": 62,
+              "y0": 88,
+              "x1": 900,
+              "y1": 130
+            },
+            "hospital_address": {
+              "page": 0,
+              "x0": 62,
+              "y0": 132,
+              "x1": 500,
+              "y1": 160
+            },
+            "patient_name": {
+              "page": 0,
+              "x0": 180,
+              "y0": 196,
+              "x1": 400,
+              "y1": 220
+            },
+            "account_number": {
+              "page": 0,
+              "x0": 180,
+              "y0": 218,
+              "x1": 400,
+              "y1": 242
+            },
+            "statement_date": {
+              "page": 0,
+              "x0": 180,
+              "y0": 240,
+              "x1": 400,
+              "y1": 264
+            },
+            "service_date_start": {
+              "page": 0,
+              "x0": 180,
+              "y0": 284,
+              "x1": 400,
+              "y1": 308
+            },
+            "payer": {
+              "page": 0,
+              "x0": 620,
+              "y0": 284,
+              "x1": 780,
+              "y1": 308
+            },
+            "visit_type": {
+              "page": 0,
+              "x0": 180,
+              "y0": 306,
+              "x1": 400,
+              "y1": 330
+            }
+          }
+        },
+        "notes": []
+      },
+      "seconds": 223.86
+    },
+    {
+      "step": "fetch",
+      "status": "start",
+      "payload": {
+        "live": true
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "fetch",
+      "status": "ok",
+      "payload": {
+        "hospital_id": "ou_health_oumc",
+        "url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+        "status": "live_partial",
+        "bytes": 8388608,
+        "total_bytes": null,
+        "seconds": 1.23,
+        "sha256": "e65807a7a49f5974e9db1e9b0813a52b05f2a17f57ec990a0ee29238c242fbbe",
+        "matched_fixture": null,
+        "note": "stopped at the 8 MB sample; lookups use the committed slice (fetched 2026-09-13)"
+      },
+      "seconds": 1.23
+    },
+    {
+      "step": "audit",
+      "status": "start",
+      "payload": {
+        "hospital_id": "ou_health_oumc"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "audit",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_03",
+        "hospital_id": "ou_health_oumc",
+        "findings": [
+          {
+            "kind": "unbundled",
+            "line_nos": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "summary": "Four components of CBC panel 85025 (85027, 85018, 85014, 85007) are billed separately instead of as a single panel.",
+            "evidence": [
+              {
+                "hospital_id": "ou_health_oumc",
+                "code": "85025",
+                "description": "COMPLETE BLOOD CELL COUNT (RED CELLS; WHITE BLOOD CELL; PLATELETS); AUTOMATED TEST AND AUTOMATED DIFFERENTIAL WHITE BLOOD CELL COUNT",
+                "setting": "outpatient",
+                "gross": 371.0,
+                "discounted_cash": 37.1,
+                "source_line": 6833,
+                "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+                "fetched_on": "2026-09-13"
+              },
+              {
+                "hospital_id": "ou_health_oumc",
+                "code": "85027",
+                "description": "COMPLETE BLOOD CELL COUNT (RED CELLS; WHITE BLOOD CELL; PLATELETS); AUTOMATED TEST",
+                "setting": "outpatient",
+                "gross": 257.0,
+                "discounted_cash": 25.7,
+                "source_line": 6848,
+                "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+                "fetched_on": "2026-09-13"
+              },
+              {
+                "hospital_id": "ou_health_oumc",
+                "code": "85018",
+                "description": "HEMOGLOBIN",
+                "setting": "outpatient",
+                "gross": 113.0,
+                "discounted_cash": 11.3,
+                "source_line": 4038,
+                "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+                "fetched_on": "2026-09-13"
+              },
+              {
+                "hospital_id": "ou_health_oumc",
+                "code": "85014",
+                "description": "RED BLOOD CELL CONCENTRATION MEASUREMENT",
+                "setting": "outpatient",
+                "gross": 123.0,
+                "discounted_cash": 12.3,
+                "source_line": 4764,
+                "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+                "fetched_on": "2026-09-13"
+              },
+              {
+                "hospital_id": "ou_health_oumc",
+                "code": "85007",
+                "description": "MICROSCOPIC EXAMINATION FOR WHITE BLOOD CELLS WITH MANUAL CELL COUNT",
+                "setting": "outpatient",
+                "gross": 636.0,
+                "discounted_cash": 63.6,
+                "source_line": 4307,
+                "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+                "fetched_on": "2026-09-13"
+              }
+            ],
+            "amount_at_stake": 75.8,
+            "basis": "cash",
+            "needs_user_judgment": false,
+            "regulation": null,
+            "confidence": 1.0
+          }
+        ],
+        "clean": false,
+        "file_used": {
+          "hospital_id": "ou_health_oumc",
+          "code": "36415",
+          "description": "COLL VENOUS BLD VENIPUNCTURE",
+          "setting": "outpatient",
+          "gross": 90.0,
+          "discounted_cash": 9.0,
+          "source_line": 4452,
+          "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+          "fetched_on": "2026-09-13"
+        },
+        "notes": [
+          "rights_specialist: primary model failed, fallback model used",
+          "line_matcher: primary model failed, fallback model used",
+          "coding_specialist: primary model failed, fallback model used"
+        ],
+        "status": "audited"
+      },
+      "seconds": 37.73
+    },
+    {
+      "step": "card",
+      "status": "start",
+      "payload": {
+        "bill_id": "bill_03",
+        "status": "audited"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "card",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_03",
+        "situation": "Lines 2, 3, 4 and 5 bill 85007, 85014, 85018, 85027 separately although the hospital's own file prices them as one panel (row 6833), $75.80 more than the panel price.",
+        "status": "audited",
+        "options": [
+          {
+            "id": "dispute",
+            "label": "Send the dispute letter",
+            "consequence": "Letter cites the hospital's own price file row; hospital has 30 days to answer"
+          },
+          {
+            "id": "itemized",
+            "label": "Request the itemized bill first",
+            "consequence": "Delays payment; confirms each line before disputing"
+          },
+          {
+            "id": "drop",
+            "label": "Pay as billed",
+            "consequence": "You accept the charge"
+          }
+        ],
+        "default_option": "itemized",
+        "deadline": "2026-09-23",
+        "deadline_reason": "Payment is due on this date; a written dispute before it keeps the account out of collections",
+        "evidence_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+        "evidence_lines": [
+          6833,
+          6848,
+          4038,
+          4764,
+          4307
+        ],
+        "amount_at_stake": 75.8,
+        "basis": "cash",
+        "needs_user_judgment": false,
+        "clean": false,
+        "kind": "unbundled"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "done",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_03",
+        "clean": false,
+        "amount_at_stake": 75.8
+      },
+      "seconds": 262.82
+    }
+  ],
+  "bill": {
+    "hospital_name": "OU Health - University of Oklahoma Medical Center",
+    "hospital_address": "700 NE 13th St, Oklahoma City, OK 73104",
+    "patient_name": "Riley Demo",
+    "account_number": "FB-2026-000003",
+    "statement_date": "2026-08-24",
+    "service_date_start": "2026-08-03",
+    "service_date_end": "2026-08-03",
+    "payer": "Self-pay",
+    "visit_type": "Outpatient lab",
+    "clinical_note": null,
+    "lines": [
+      {
+        "line_no": 1,
+        "date_of_service": "2026-08-03",
+        "code": "36415",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Collection of venous blood, venipuncture",
+        "units": 1.0,
+        "charge": 90.0,
+        "patient_price": 9.0,
+        "provider": null,
+        "network_note": null,
+        "crop": {
+          "page": 0,
+          "x0": 62,
+          "y0": 490,
+          "x1": 1430,
+          "y1": 520
+        }
+      },
+      {
+        "line_no": 2,
+        "date_of_service": "2026-08-03",
+        "code": "85027",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Complete blood cell count, automated",
+        "units": 1.0,
+        "charge": 257.0,
+        "patient_price": 25.7,
+        "provider": null,
+        "network_note": null,
+        "crop": {
+          "page": 0,
+          "x0": 62,
+          "y0": 528,
+          "x1": 1430,
+          "y1": 558
+        }
+      },
+      {
+        "line_no": 3,
+        "date_of_service": "2026-08-03",
+        "code": "85018",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Hemoglobin",
+        "units": 1.0,
+        "charge": 113.0,
+        "patient_price": 11.3,
+        "provider": null,
+        "network_note": null,
+        "crop": {
+          "page": 0,
+          "x0": 62,
+          "y0": 566,
+          "x1": 1430,
+          "y1": 596
+        }
+      },
+      {
+        "line_no": 4,
+        "date_of_service": "2026-08-03",
+        "code": "85014",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Red blood cell concentration (hematocrit)",
+        "units": 1.0,
+        "charge": 123.0,
+        "patient_price": 12.3,
+        "provider": null,
+        "network_note": null,
+        "crop": {
+          "page": 0,
+          "x0": 62,
+          "y0": 604,
+          "x1": 1430,
+          "y1": 634
+        }
+      },
+      {
+        "line_no": 5,
+        "date_of_service": "2026-08-03",
+        "code": "85007",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Microscopic exam, white cells, manual differential",
+        "units": 1.0,
+        "charge": 636.0,
+        "patient_price": 63.6,
+        "provider": null,
+        "network_note": null,
+        "crop": {
+          "page": 0,
+          "x0": 62,
+          "y0": 642,
+          "x1": 1430,
+          "y1": 672
+        }
+      },
+      {
+        "line_no": 6,
+        "date_of_service": "2026-08-03",
+        "code": "80053",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Blood test, comprehensive group of chemicals",
+        "units": 1.0,
+        "charge": 1025.0,
+        "patient_price": 102.5,
+        "provider": null,
+        "network_note": null,
+        "crop": {
+          "page": 0,
+          "x0": 62,
+          "y0": 680,
+          "x1": 1430,
+          "y1": 710
+        }
+      }
+    ],
+    "total_charges": 2244.0,
+    "total_adjustments": -2019.6,
+    "patient_balance": 224.4,
+    "fictional_label_present": true,
+    "crops": {
+      "hospital_name": {
+        "page": 0,
+        "x0": 62,
+        "y0": 88,
+        "x1": 900,
+        "y1": 130
+      },
+      "hospital_address": {
+        "page": 0,
+        "x0": 62,
+        "y0": 132,
+        "x1": 500,
+        "y1": 160
+      },
+      "patient_name": {
+        "page": 0,
+        "x0": 180,
+        "y0": 196,
+        "x1": 400,
+        "y1": 220
+      },
+      "account_number": {
+        "page": 0,
+        "x0": 180,
+        "y0": 218,
+        "x1": 400,
+        "y1": 242
+      },
+      "statement_date": {
+        "page": 0,
+        "x0": 180,
+        "y0": 240,
+        "x1": 400,
+        "y1": 264
+      },
+      "service_date_start": {
+        "page": 0,
+        "x0": 180,
+        "y0": 284,
+        "x1": 400,
+        "y1": 308
+      },
+      "payer": {
+        "page": 0,
+        "x0": 620,
+        "y0": 284,
+        "x1": 780,
+        "y1": 308
+      },
+      "visit_type": {
+        "page": 0,
+        "x0": 180,
+        "y0": 306,
+        "x1": 400,
+        "y1": 330
+      }
+    }
+  },
+  "audit": {
+    "bill_id": "bill_03",
+    "hospital_id": "ou_health_oumc",
+    "findings": [
+      {
+        "kind": "unbundled",
+        "line_nos": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "summary": "Four components of CBC panel 85025 (85027, 85018, 85014, 85007) are billed separately instead of as a single panel.",
+        "evidence": [
+          {
+            "hospital_id": "ou_health_oumc",
+            "code": "85025",
+            "description": "COMPLETE BLOOD CELL COUNT (RED CELLS; WHITE BLOOD CELL; PLATELETS); AUTOMATED TEST AND AUTOMATED DIFFERENTIAL WHITE BLOOD CELL COUNT",
+            "setting": "outpatient",
+            "gross": 371.0,
+            "discounted_cash": 37.1,
+            "source_line": 6833,
+            "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+            "fetched_on": "2026-09-13"
+          },
+          {
+            "hospital_id": "ou_health_oumc",
+            "code": "85027",
+            "description": "COMPLETE BLOOD CELL COUNT (RED CELLS; WHITE BLOOD CELL; PLATELETS); AUTOMATED TEST",
+            "setting": "outpatient",
+            "gross": 257.0,
+            "discounted_cash": 25.7,
+            "source_line": 6848,
+            "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+            "fetched_on": "2026-09-13"
+          },
+          {
+            "hospital_id": "ou_health_oumc",
+            "code": "85018",
+            "description": "HEMOGLOBIN",
+            "setting": "outpatient",
+            "gross": 113.0,
+            "discounted_cash": 11.3,
+            "source_line": 4038,
+            "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+            "fetched_on": "2026-09-13"
+          },
+          {
+            "hospital_id": "ou_health_oumc",
+            "code": "85014",
+            "description": "RED BLOOD CELL CONCENTRATION MEASUREMENT",
+            "setting": "outpatient",
+            "gross": 123.0,
+            "discounted_cash": 12.3,
+            "source_line": 4764,
+            "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+            "fetched_on": "2026-09-13"
+          },
+          {
+            "hospital_id": "ou_health_oumc",
+            "code": "85007",
+            "description": "MICROSCOPIC EXAMINATION FOR WHITE BLOOD CELLS WITH MANUAL CELL COUNT",
+            "setting": "outpatient",
+            "gross": 636.0,
+            "discounted_cash": 63.6,
+            "source_line": 4307,
+            "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+            "fetched_on": "2026-09-13"
+          }
+        ],
+        "amount_at_stake": 75.8,
+        "basis": "cash",
+        "needs_user_judgment": false,
+        "regulation": null,
+        "confidence": 1.0
+      }
+    ],
+    "clean": false,
+    "file_used": {
+      "hospital_id": "ou_health_oumc",
+      "code": "36415",
+      "description": "COLL VENOUS BLD VENIPUNCTURE",
+      "setting": "outpatient",
+      "gross": 90.0,
+      "discounted_cash": 9.0,
+      "source_line": 4452,
+      "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+      "fetched_on": "2026-09-13"
+    },
+    "notes": [
+      "rights_specialist: primary model failed, fallback model used",
+      "line_matcher: primary model failed, fallback model used",
+      "coding_specialist: primary model failed, fallback model used"
+    ],
+    "status": "audited"
+  },
+  "card": {
+    "bill_id": "bill_03",
+    "situation": "Lines 2, 3, 4 and 5 bill 85007, 85014, 85018, 85027 separately although the hospital's own file prices them as one panel (row 6833), $75.80 more than the panel price.",
+    "status": "audited",
+    "options": [
+      {
+        "id": "dispute",
+        "label": "Send the dispute letter",
+        "consequence": "Letter cites the hospital's own price file row; hospital has 30 days to answer"
+      },
+      {
+        "id": "itemized",
+        "label": "Request the itemized bill first",
+        "consequence": "Delays payment; confirms each line before disputing"
+      },
+      {
+        "id": "drop",
+        "label": "Pay as billed",
+        "consequence": "You accept the charge"
+      }
+    ],
+    "default_option": "itemized",
+    "deadline": "2026-09-23",
+    "deadline_reason": "Payment is due on this date; a written dispute before it keeps the account out of collections",
+    "evidence_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+    "evidence_lines": [
+      6833,
+      6848,
+      4038,
+      4764,
+      4307
+    ],
+    "amount_at_stake": 75.8,
+    "basis": "cash",
+    "needs_user_judgment": false,
+    "clean": false,
+    "kind": "unbundled"
+  },
+  "ics": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Fairbill//Decision deadline//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:bill_03-2026-09-23-unbundled@fairbill.local\r\nDTSTAMP:20260914T084250Z\r\nDTSTART;VALUE=DATE:20260923\r\nDTEND;VALUE=DATE:20260924\r\nSUMMARY:Fairbill: bill_03 response deadline (unbundled)\r\nDESCRIPTION:Payment is due on this date\\; a written dispute before it keeps\r\n  the account out of collections. Evidence: https://apim.services.craneware\r\n .com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/\r\n charges/mrf\r\nLOCATION:OU Health - University of Oklahoma Medical Center\r\nTRANSP:TRANSPARENT\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n",
+  "letter": {
+    "bill_id": "bill_03",
+    "kind": "itemized_request",
+    "to_name": "OU Health - University of Oklahoma Medical Center",
+    "to_address": "OU Health, Patient Financial Services, 700 NE 13th St, Oklahoma City, OK 73104",
+    "from_name": "Riley Demo",
+    "re_line": "Re: Itemized Statement Request and Billing Dispute - Account FB-2026-000003, Statement Date 2026-08-24",
+    "body": "Dear Patient Financial Services,\n\nI am writing about account FB-2026-000003, statement dated 2026-08-24. Before I make any payment, I am requesting a fully itemized statement of every line, code and charge on this account, as I have a question about how my blood work was billed.\n\nMy statement shows four separate charges on lines 2 through 5:\n\n- Line 2: 85027, your price $25.70 (list charge before discount $257.00)\n- Line 3: 85018, your price $11.30 (list charge before discount $113.00)\n- Line 4: 85014, your price $12.30 (list charge before discount $123.00)\n- Line 5: 85007, your price $63.60 (list charge before discount $636.00)\n\nThose four codes together come to $112.90 at your self-pay price. However, your own posted price file includes a single panel code, 85025 COMPLETE BLOOD CELL COUNT (RED CELLS; WHITE BLOOD CELL; PLATELETS); AUTOMATED TEST AND AUTOMATED DIFFERENTIAL WHITE BLOOD CELL COUNT, at a discounted cash price of $37.10 (posted gross $371.00, file line 6833, row 6833). That panel appears to cover the same services. Billing the components separately instead of the panel results in a difference of $75.80 at the self-pay price level.\n\nUnder 45 CFR 180.50, hospitals are required to make their standard charge information publicly available and to apply it consistently. Your own price file at row 6833 lists the panel price, and I am asking that my bill reflect that price rather than the sum of the unbundled components.\n\nPlease send me a complete itemized statement showing every line, code and charge, along with a written explanation of why the four component codes were billed separately rather than as panel 85025 at the price shown in row 6833.\n\nI need your response by 2026-09-23, which is also my payment due date. I am happy to pay promptly once this question is resolved.\n\nSincerely,\nRiley Demo\n\nSources:\n- The hospital's own standard-charges file, row 6833: 85025 COMPLETE BLOOD CELL COUNT (RED CELLS; WHITE BLOOD CELL; PLATELETS); AUTOMATED TEST AND AUTOMATED DIFFERENTIAL WHITE BLOOD CELL COUNT, posted gross $371.00, discounted cash price $37.10 (file fetched 2026-09-13). https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf\n- 45 CFR 180.50 requires this hospital to publish its standard charges, including the discounted cash price, in a machine-readable file. https://www.ecfr.gov/current/title-45/part-180",
+    "citations": [
+      "row 6833",
+      "45 CFR 180.50",
+      "itemized statement"
+    ],
+    "footer": "Fairbill drafts letters from public price data. This is not legal advice. Patient names in this demo are fictional."
+  },
+  "letter_text": "2026-09-14\n\nOU Health - University of Oklahoma Medical Center\nOU Health, Patient Financial Services, 700 NE 13th St, Oklahoma City, OK 73104\n\nRe: Itemized Statement Request and Billing Dispute - Account FB-2026-000003, Statement Date 2026-08-24\n\nDear Patient Financial Services,\n\nI am writing about account FB-2026-000003, statement dated 2026-08-24. Before I make any payment, I am requesting a fully itemized statement of every line, code and charge on this account, as I have a question about how my blood work was billed.\n\nMy statement shows four separate charges on lines 2 through 5:\n\n- Line 2: 85027, your price $25.70 (list charge before discount $257.00)\n- Line 3: 85018, your price $11.30 (list charge before discount $113.00)\n- Line 4: 85014, your price $12.30 (list charge before discount $123.00)\n- Line 5: 85007, your price $63.60 (list charge before discount $636.00)\n\nThose four codes together come to $112.90 at your self-pay price. However, your own posted price file includes a single panel code, 85025 COMPLETE BLOOD CELL COUNT (RED CELLS; WHITE BLOOD CELL; PLATELETS); AUTOMATED TEST AND AUTOMATED DIFFERENTIAL WHITE BLOOD CELL COUNT, at a discounted cash price of $37.10 (posted gross $371.00, file line 6833, row 6833). That panel appears to cover the same services. Billing the components separately instead of the panel results in a difference of $75.80 at the self-pay price level.\n\nUnder 45 CFR 180.50, hospitals are required to make their standard charge information publicly available and to apply it consistently. Your own price file at row 6833 lists the panel price, and I am asking that my bill reflect that price rather than the sum of the unbundled components.\n\nPlease send me a complete itemized statement showing every line, code and charge, along with a written explanation of why the four component codes were billed separately rather than as panel 85025 at the price shown in row 6833.\n\nI need your response by 2026-09-23, which is also my payment due date. I am happy to pay promptly once this question is resolved.\n\nSincerely,\nRiley Demo\n\nSources:\n- The hospital's own standard-charges file, row 6833: 85025 COMPLETE BLOOD CELL COUNT (RED CELLS; WHITE BLOOD CELL; PLATELETS); AUTOMATED TEST AND AUTOMATED DIFFERENTIAL WHITE BLOOD CELL COUNT, posted gross $371.00, discounted cash price $37.10 (file fetched 2026-09-13). https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf\n- 45 CFR 180.50 requires this hospital to publish its standard charges, including the discounted cash price, in a machine-readable file. https://www.ecfr.gov/current/title-45/part-180\n\nFairbill drafts letters from public price data. This is not legal advice. Patient names in this demo are fictional.\n",
+  "ledger": [
+    {
+      "id": "814c1090dd58",
+      "ts": "2026-09-14T06:13:43.425139+00:00",
+      "session_id": "precompute_bill_03",
+      "bill_id": "bill_03",
+      "action": "read",
+      "why": "read bill_03_photo.jpg",
+      "evidence": [
+        "bill_03_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "731c6bcd5629",
+      "ts": "2026-09-14T06:13:43.431073+00:00",
+      "session_id": "precompute_bill_03",
+      "bill_id": "bill_03",
+      "action": "fetch",
+      "why": "fixture fetch of the hospital price file",
+      "evidence": [
+        "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "cdc046a15512",
+      "ts": "2026-09-14T06:13:52.954359+00:00",
+      "session_id": "precompute_bill_03",
+      "bill_id": "bill_03",
+      "action": "audit",
+      "why": "1 finding(s) against the hospital's file",
+      "evidence": [
+        "85025 row 6833",
+        "85027 row 6848",
+        "85018 row 4038",
+        "85014 row 4764",
+        "85007 row 4307"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "c59f179b1637",
+      "ts": "2026-09-14T06:13:52.957614+00:00",
+      "session_id": "precompute_bill_03",
+      "bill_id": "bill_03",
+      "action": "card",
+      "why": "decision card, default itemized",
+      "evidence": [
+        "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "704a25a7f8f2",
+      "ts": "2026-09-14T08:42:11.573187+00:00",
+      "session_id": "precompute_bill_03",
+      "bill_id": "bill_03",
+      "action": "read",
+      "why": "read bill_03_photo.jpg",
+      "evidence": [
+        "bill_03_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "b5c0c7f25d5b",
+      "ts": "2026-09-14T08:42:12.810897+00:00",
+      "session_id": "precompute_bill_03",
+      "bill_id": "bill_03",
+      "action": "fetch",
+      "why": "live_partial fetch of the hospital price file",
+      "evidence": [
+        "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "67c0b9b11f79",
+      "ts": "2026-09-14T08:42:50.537213+00:00",
+      "session_id": "precompute_bill_03",
+      "bill_id": "bill_03",
+      "action": "audit",
+      "why": "1 finding(s) against the hospital's file",
+      "evidence": [
+        "85025 row 6833",
+        "85027 row 6848",
+        "85018 row 4038",
+        "85014 row 4764",
+        "85007 row 4307"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "4ff98f867fcf",
+      "ts": "2026-09-14T08:42:50.540335+00:00",
+      "session_id": "precompute_bill_03",
+      "bill_id": "bill_03",
+      "action": "card",
+      "why": "decision card, default itemized",
+      "evidence": [
+        "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    }
+  ]
+}

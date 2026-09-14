@@ -1,0 +1,685 @@
+{
+  "bill_id": "bill_04",
+  "today": "2026-09-14",
+  "events": [
+    {
+      "step": "read",
+      "status": "start",
+      "payload": {
+        "bill_id": "bill_04",
+        "photo": "bill_04_photo.jpg"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "read",
+      "status": "ok",
+      "payload": {
+        "bill": {
+          "hospital_name": "OU Health - University of Oklahoma Medical Center",
+          "hospital_address": "700 NE 13th St, Oklahoma City, OK 73104",
+          "patient_name": "Morgan Placeholder",
+          "account_number": "FB-2026-000004",
+          "statement_date": "2026-09-11",
+          "service_date_start": "2026-08-21",
+          "service_date_end": "2026-08-21",
+          "payer": "Self-pay",
+          "visit_type": "Emergency visit",
+          "clinical_note": "Reason for visit: sore throat and cough, 2 days. Vitals normal, no fever. Rapid strep negative. Chest X-ray clear. Discharged home with instructions; no prescriptions.",
+          "lines": [
+            {
+              "line_no": 1,
+              "date_of_service": "2026-08-21",
+              "code": "99285",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Emergency department visit, life-threatening or high severity",
+              "units": 1.0,
+              "charge": 6795.0,
+              "patient_price": 679.5,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            },
+            {
+              "line_no": 2,
+              "date_of_service": "2026-08-21",
+              "code": "36415",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Collection of venous blood, venipuncture",
+              "units": 1.0,
+              "charge": 90.0,
+              "patient_price": 9.0,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            },
+            {
+              "line_no": 3,
+              "date_of_service": "2026-08-21",
+              "code": "80053",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Blood test, comprehensive group of chemicals",
+              "units": 1.0,
+              "charge": 1025.0,
+              "patient_price": 102.5,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            },
+            {
+              "line_no": 4,
+              "date_of_service": "2026-08-21",
+              "code": "71046",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "X-ray of chest, 2 views",
+              "units": 1.0,
+              "charge": 683.0,
+              "patient_price": 68.3,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            },
+            {
+              "line_no": 5,
+              "date_of_service": "2026-08-21",
+              "code": "93005",
+              "code_type": "CPT",
+              "modifier": null,
+              "description": "Routine electrocardiogram, 12 leads, tracing",
+              "units": 1.0,
+              "charge": 532.0,
+              "patient_price": 53.2,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            },
+            {
+              "line_no": 6,
+              "date_of_service": "2026-08-21",
+              "code": "J7030",
+              "code_type": "HCPCS",
+              "modifier": null,
+              "description": "Normal saline solution infusion",
+              "units": 1.0,
+              "charge": 7.0,
+              "patient_price": 0.7,
+              "provider": null,
+              "network_note": null,
+              "crop": null
+            }
+          ],
+          "total_charges": 9132.0,
+          "total_adjustments": -8218.8,
+          "patient_balance": 913.2,
+          "fictional_label_present": true,
+          "crops": {}
+        },
+        "notes": [
+          "attempt 1 on global.anthropic.claude-sonnet-4-6 failed: ModelThrottledException: An error occurred (ThrottlingException) when calling the ConverseStream operation (reached max retries: 4): Too many tokens per day, please wait before trying a",
+          "attempt 2 on global.anthropic.claude-sonnet-4-6 failed: ModelThrottledException: An error occurred (ThrottlingException) when calling the ConverseStream operation (reached max retries: 4): Too many tokens per day, please wait before trying a",
+          "primary model failed twice; read with the fallback model"
+        ]
+      },
+      "seconds": 353.95
+    },
+    {
+      "step": "fetch",
+      "status": "start",
+      "payload": {
+        "live": true
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "fetch",
+      "status": "ok",
+      "payload": {
+        "hospital_id": "ou_health_oumc",
+        "url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+        "status": "live_partial",
+        "bytes": 8388608,
+        "total_bytes": null,
+        "seconds": 1.13,
+        "sha256": "e65807a7a49f5974e9db1e9b0813a52b05f2a17f57ec990a0ee29238c242fbbe",
+        "matched_fixture": null,
+        "note": "stopped at the 8 MB sample; lookups use the committed slice (fetched 2026-09-13)"
+      },
+      "seconds": 1.14
+    },
+    {
+      "step": "audit",
+      "status": "start",
+      "payload": {
+        "hospital_id": "ou_health_oumc"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "audit",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_04",
+        "hospital_id": "ou_health_oumc",
+        "findings": [
+          {
+            "kind": "upcoded",
+            "line_nos": [
+              1
+            ],
+            "summary": "ED visit coded as level 5 (life-threatening severity) but visit summary shows normal vitals, negative rapid strep, clear chest X-ray, and discharge home with no prescriptions, consistent with lower acuity.",
+            "evidence": [
+              {
+                "hospital_id": "ou_health_oumc",
+                "code": "99285",
+                "description": "EMERGENCY DEPARTMENT VISIT FOR LIFE THREATENING OR FUNCTIONING SEVERITY",
+                "setting": "outpatient",
+                "gross": 6795.0,
+                "discounted_cash": 679.5,
+                "source_line": 4045,
+                "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+                "fetched_on": "2026-09-13"
+              },
+              {
+                "hospital_id": "ou_health_oumc",
+                "code": "99283",
+                "description": "EMERGENCY DEPARTMENT VISIT FOR PROBLEM OF MODERATE SEVERITY",
+                "setting": "outpatient",
+                "gross": 1898.0,
+                "discounted_cash": 189.8,
+                "source_line": 4688,
+                "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+                "fetched_on": "2026-09-13"
+              }
+            ],
+            "amount_at_stake": 489.7,
+            "basis": "cash",
+            "needs_user_judgment": true,
+            "regulation": null,
+            "confidence": 1.0
+          }
+        ],
+        "clean": false,
+        "file_used": {
+          "hospital_id": "ou_health_oumc",
+          "code": "99285",
+          "description": "EMERGENCY DEPARTMENT VISIT FOR LIFE THREATENING OR FUNCTIONING SEVERITY",
+          "setting": "outpatient",
+          "gross": 6795.0,
+          "discounted_cash": 679.5,
+          "source_line": 4045,
+          "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+          "fetched_on": "2026-09-13"
+        },
+        "notes": [
+          "rights_specialist: primary model failed, fallback model used",
+          "line_matcher: primary model failed, fallback model used",
+          "coding_specialist: primary model failed, fallback model used"
+        ],
+        "status": "audited"
+      },
+      "seconds": 38.85
+    },
+    {
+      "step": "card",
+      "status": "start",
+      "payload": {
+        "bill_id": "bill_04",
+        "status": "audited"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "card",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_04",
+        "situation": "Line 1 bills visit level 99285 at $6,795.00, $489.70 more than the next level down (row 4045). This needs your judgment: does the visit summary match what happened?",
+        "status": "audited",
+        "options": [
+          {
+            "id": "ask_provider",
+            "label": "Ask the hospital to justify the visit level",
+            "consequence": "Letter asks for the coding rationale against your visit summary"
+          },
+          {
+            "id": "itemized",
+            "label": "Request the itemized bill first",
+            "consequence": "Delays payment; confirms each line before disputing"
+          },
+          {
+            "id": "drop",
+            "label": "Pay as billed",
+            "consequence": "You accept the charge"
+          }
+        ],
+        "default_option": "ask_provider",
+        "deadline": "2026-10-11",
+        "deadline_reason": "Payment is due on this date; a written dispute before it keeps the account out of collections",
+        "evidence_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+        "evidence_lines": [
+          4045,
+          4688
+        ],
+        "amount_at_stake": 489.7,
+        "basis": "cash",
+        "needs_user_judgment": true,
+        "clean": false,
+        "kind": "upcoded"
+      },
+      "seconds": 0.0
+    },
+    {
+      "step": "done",
+      "status": "ok",
+      "payload": {
+        "bill_id": "bill_04",
+        "clean": false,
+        "amount_at_stake": 489.7
+      },
+      "seconds": 393.95
+    }
+  ],
+  "bill": {
+    "hospital_name": "OU Health - University of Oklahoma Medical Center",
+    "hospital_address": "700 NE 13th St, Oklahoma City, OK 73104",
+    "patient_name": "Morgan Placeholder",
+    "account_number": "FB-2026-000004",
+    "statement_date": "2026-09-11",
+    "service_date_start": "2026-08-21",
+    "service_date_end": "2026-08-21",
+    "payer": "Self-pay",
+    "visit_type": "Emergency visit",
+    "clinical_note": "Reason for visit: sore throat and cough, 2 days. Vitals normal, no fever. Rapid strep negative. Chest X-ray clear. Discharged home with instructions; no prescriptions.",
+    "lines": [
+      {
+        "line_no": 1,
+        "date_of_service": "2026-08-21",
+        "code": "99285",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Emergency department visit, life-threatening or high severity",
+        "units": 1.0,
+        "charge": 6795.0,
+        "patient_price": 679.5,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      },
+      {
+        "line_no": 2,
+        "date_of_service": "2026-08-21",
+        "code": "36415",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Collection of venous blood, venipuncture",
+        "units": 1.0,
+        "charge": 90.0,
+        "patient_price": 9.0,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      },
+      {
+        "line_no": 3,
+        "date_of_service": "2026-08-21",
+        "code": "80053",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Blood test, comprehensive group of chemicals",
+        "units": 1.0,
+        "charge": 1025.0,
+        "patient_price": 102.5,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      },
+      {
+        "line_no": 4,
+        "date_of_service": "2026-08-21",
+        "code": "71046",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "X-ray of chest, 2 views",
+        "units": 1.0,
+        "charge": 683.0,
+        "patient_price": 68.3,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      },
+      {
+        "line_no": 5,
+        "date_of_service": "2026-08-21",
+        "code": "93005",
+        "code_type": "CPT",
+        "modifier": null,
+        "description": "Routine electrocardiogram, 12 leads, tracing",
+        "units": 1.0,
+        "charge": 532.0,
+        "patient_price": 53.2,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      },
+      {
+        "line_no": 6,
+        "date_of_service": "2026-08-21",
+        "code": "J7030",
+        "code_type": "HCPCS",
+        "modifier": null,
+        "description": "Normal saline solution infusion",
+        "units": 1.0,
+        "charge": 7.0,
+        "patient_price": 0.7,
+        "provider": null,
+        "network_note": null,
+        "crop": null
+      }
+    ],
+    "total_charges": 9132.0,
+    "total_adjustments": -8218.8,
+    "patient_balance": 913.2,
+    "fictional_label_present": true,
+    "crops": {}
+  },
+  "audit": {
+    "bill_id": "bill_04",
+    "hospital_id": "ou_health_oumc",
+    "findings": [
+      {
+        "kind": "upcoded",
+        "line_nos": [
+          1
+        ],
+        "summary": "ED visit coded as level 5 (life-threatening severity) but visit summary shows normal vitals, negative rapid strep, clear chest X-ray, and discharge home with no prescriptions, consistent with lower acuity.",
+        "evidence": [
+          {
+            "hospital_id": "ou_health_oumc",
+            "code": "99285",
+            "description": "EMERGENCY DEPARTMENT VISIT FOR LIFE THREATENING OR FUNCTIONING SEVERITY",
+            "setting": "outpatient",
+            "gross": 6795.0,
+            "discounted_cash": 679.5,
+            "source_line": 4045,
+            "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+            "fetched_on": "2026-09-13"
+          },
+          {
+            "hospital_id": "ou_health_oumc",
+            "code": "99283",
+            "description": "EMERGENCY DEPARTMENT VISIT FOR PROBLEM OF MODERATE SEVERITY",
+            "setting": "outpatient",
+            "gross": 1898.0,
+            "discounted_cash": 189.8,
+            "source_line": 4688,
+            "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+            "fetched_on": "2026-09-13"
+          }
+        ],
+        "amount_at_stake": 489.7,
+        "basis": "cash",
+        "needs_user_judgment": true,
+        "regulation": null,
+        "confidence": 1.0
+      }
+    ],
+    "clean": false,
+    "file_used": {
+      "hospital_id": "ou_health_oumc",
+      "code": "99285",
+      "description": "EMERGENCY DEPARTMENT VISIT FOR LIFE THREATENING OR FUNCTIONING SEVERITY",
+      "setting": "outpatient",
+      "gross": 6795.0,
+      "discounted_cash": 679.5,
+      "source_line": 4045,
+      "source_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+      "fetched_on": "2026-09-13"
+    },
+    "notes": [
+      "rights_specialist: primary model failed, fallback model used",
+      "line_matcher: primary model failed, fallback model used",
+      "coding_specialist: primary model failed, fallback model used"
+    ],
+    "status": "audited"
+  },
+  "card": {
+    "bill_id": "bill_04",
+    "situation": "Line 1 bills visit level 99285 at $6,795.00, $489.70 more than the next level down (row 4045). This needs your judgment: does the visit summary match what happened?",
+    "status": "audited",
+    "options": [
+      {
+        "id": "ask_provider",
+        "label": "Ask the hospital to justify the visit level",
+        "consequence": "Letter asks for the coding rationale against your visit summary"
+      },
+      {
+        "id": "itemized",
+        "label": "Request the itemized bill first",
+        "consequence": "Delays payment; confirms each line before disputing"
+      },
+      {
+        "id": "drop",
+        "label": "Pay as billed",
+        "consequence": "You accept the charge"
+      }
+    ],
+    "default_option": "ask_provider",
+    "deadline": "2026-10-11",
+    "deadline_reason": "Payment is due on this date; a written dispute before it keeps the account out of collections",
+    "evidence_url": "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf",
+    "evidence_lines": [
+      4045,
+      4688
+    ],
+    "amount_at_stake": 489.7,
+    "basis": "cash",
+    "needs_user_judgment": true,
+    "clean": false,
+    "kind": "upcoded"
+  },
+  "ics": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Fairbill//Decision deadline//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:bill_04-2026-10-11-upcoded@fairbill.local\r\nDTSTAMP:20260914T092307Z\r\nDTSTART;VALUE=DATE:20261011\r\nDTEND;VALUE=DATE:20261012\r\nSUMMARY:Fairbill: bill_04 response deadline (upcoded)\r\nDESCRIPTION:Payment is due on this date\\; a written dispute before it keeps\r\n  the account out of collections. Evidence: https://apim.services.craneware\r\n .com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/\r\n charges/mrf\r\nLOCATION:OU Health - University of Oklahoma Medical Center\r\nTRANSP:TRANSPARENT\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n",
+  "letter": {
+    "bill_id": "bill_04",
+    "kind": "dispute",
+    "to_name": "OU Health - University of Oklahoma Medical Center",
+    "to_address": "OU Health, Patient Financial Services, 700 NE 13th St, Oklahoma City, OK 73104",
+    "from_name": "Morgan Placeholder",
+    "re_line": "Re: Account FB-2026-000004 - Statement dated 2026-09-11 - Dispute of visit-level charge, $489.70 at issue",
+    "body": "Dear Patient Financial Services,\n\nI am writing to dispute a charge on my statement dated 2026-09-11 before the payment due date of 2026-10-11. I understand that submitting this written dispute before that date keeps my account out of collections while the matter is reviewed.\n\nThe charge in question is on line 1 of my bill: code 99285, Emergency Department Visit for Life-Threatening or High Severity, billed at a list charge before discount of $6,795.00, with a your price (cash) of $679.50. This matches row 4045 in your posted price file, as required to be published under 45 CFR 180.50.\n\nMy concern is the difference between code 99285 (your price $679.50, row 4045) and the next level down, code 99283, EMERGENCY DEPARTMENT VISIT FOR PROBLEM OF MODERATE SEVERITY (your price $189.80, file line 4688). That is a difference of $489.70 in cash price - the amount at stake in this dispute.\n\nI am not asserting that the visit level is wrong. I am asking that your billing team review the visit summary and clinical documentation from my encounter and confirm that the level of service recorded there supports a billing level of 99285 rather than 99283. If the documentation does support 99285, I would appreciate a brief written explanation of why. If it does not, I ask that the charge be corrected to 99283 and that a revised statement showing the updated your price be sent to me.\n\nPlease respond in writing by 2026-10-11.\n\nThank you for your time and attention to this matter.\n\nSincerely,\nMorgan Placeholder\n\nSources:\n- The hospital's own standard-charges file, row 4045: 99285 EMERGENCY DEPARTMENT VISIT FOR LIFE THREATENING OR FUNCTIONING SEVERITY, posted gross $6,795.00, discounted cash price $679.50 (file fetched 2026-09-13). https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf\n- 45 CFR 180.50 requires this hospital to publish its standard charges, including the discounted cash price, in a machine-readable file. https://www.ecfr.gov/current/title-45/part-180",
+    "citations": [
+      "row 4045",
+      "45 CFR 180.50"
+    ],
+    "footer": "Fairbill drafts letters from public price data. This is not legal advice. Patient names in this demo are fictional."
+  },
+  "letter_text": "2026-09-14\n\nOU Health - University of Oklahoma Medical Center\nOU Health, Patient Financial Services, 700 NE 13th St, Oklahoma City, OK 73104\n\nRe: Account FB-2026-000004 - Statement dated 2026-09-11 - Dispute of visit-level charge, $489.70 at issue\n\nDear Patient Financial Services,\n\nI am writing to dispute a charge on my statement dated 2026-09-11 before the payment due date of 2026-10-11. I understand that submitting this written dispute before that date keeps my account out of collections while the matter is reviewed.\n\nThe charge in question is on line 1 of my bill: code 99285, Emergency Department Visit for Life-Threatening or High Severity, billed at a list charge before discount of $6,795.00, with a your price (cash) of $679.50. This matches row 4045 in your posted price file, as required to be published under 45 CFR 180.50.\n\nMy concern is the difference between code 99285 (your price $679.50, row 4045) and the next level down, code 99283, EMERGENCY DEPARTMENT VISIT FOR PROBLEM OF MODERATE SEVERITY (your price $189.80, file line 4688). That is a difference of $489.70 in cash price - the amount at stake in this dispute.\n\nI am not asserting that the visit level is wrong. I am asking that your billing team review the visit summary and clinical documentation from my encounter and confirm that the level of service recorded there supports a billing level of 99285 rather than 99283. If the documentation does support 99285, I would appreciate a brief written explanation of why. If it does not, I ask that the charge be corrected to 99283 and that a revised statement showing the updated your price be sent to me.\n\nPlease respond in writing by 2026-10-11.\n\nThank you for your time and attention to this matter.\n\nSincerely,\nMorgan Placeholder\n\nSources:\n- The hospital's own standard-charges file, row 4045: 99285 EMERGENCY DEPARTMENT VISIT FOR LIFE THREATENING OR FUNCTIONING SEVERITY, posted gross $6,795.00, discounted cash price $679.50 (file fetched 2026-09-13). https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf\n- 45 CFR 180.50 requires this hospital to publish its standard charges, including the discounted cash price, in a machine-readable file. https://www.ecfr.gov/current/title-45/part-180\n\nFairbill drafts letters from public price data. This is not legal advice. Patient names in this demo are fictional.\n",
+  "ledger": [
+    {
+      "id": "587cb9e6f4aa",
+      "ts": "2026-09-14T06:14:29.817906+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "read",
+      "why": "read bill_04_photo.jpg",
+      "evidence": [
+        "bill_04_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "6cfe3164dfe6",
+      "ts": "2026-09-14T06:14:29.825585+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "fetch",
+      "why": "fixture fetch of the hospital price file",
+      "evidence": [
+        "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "626c5cf95699",
+      "ts": "2026-09-14T06:14:47.199719+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "audit",
+      "why": "1 finding(s) against the hospital's file",
+      "evidence": [
+        "99285 row 4045",
+        "99283 row 4688"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "d5a3137fd47f",
+      "ts": "2026-09-14T06:14:47.203371+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "card",
+      "why": "decision card, default ask_provider",
+      "evidence": [
+        "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "beb09bdcbc84",
+      "ts": "2026-09-14T08:49:43.858097+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "read",
+      "why": "read bill_04_photo.jpg",
+      "evidence": [
+        "bill_04_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "90a60599c6dc",
+      "ts": "2026-09-14T08:49:45.037930+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "fetch",
+      "why": "live_partial fetch of the hospital price file",
+      "evidence": [
+        "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "2ae26c7d2f62",
+      "ts": "2026-09-14T08:50:28.333955+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "audit",
+      "why": "1 finding(s) against the hospital's file",
+      "evidence": [
+        "99285 row 4045",
+        "99283 row 4688"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "3fdfa91e226a",
+      "ts": "2026-09-14T08:50:28.345400+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "card",
+      "why": "decision card, default ask_provider",
+      "evidence": [
+        "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "600e61f95c13",
+      "ts": "2026-09-14T09:22:27.745834+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "read",
+      "why": "read bill_04_photo.jpg",
+      "evidence": [
+        "bill_04_photo.jpg"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "8ace68626a0d",
+      "ts": "2026-09-14T09:22:28.892808+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "fetch",
+      "why": "live_partial fetch of the hospital price file",
+      "evidence": [
+        "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "97b146591322",
+      "ts": "2026-09-14T09:23:07.747078+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "audit",
+      "why": "1 finding(s) against the hospital's file",
+      "evidence": [
+        "99285 row 4045",
+        "99283 row 4688"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    },
+    {
+      "id": "8d17f19c2676",
+      "ts": "2026-09-14T09:23:07.750370+00:00",
+      "session_id": "precompute_bill_04",
+      "bill_id": "bill_04",
+      "action": "card",
+      "why": "decision card, default ask_provider",
+      "evidence": [
+        "https://apim.services.craneware.com/api-pricing-transparency/api/public/ebdcd27316bbcd47fb02c60d601d05cc/charges/mrf"
+      ],
+      "undo": null,
+      "undone": false,
+      "final_after": null,
+      "actor": "agent"
+    }
+  ]
+}
