@@ -12,4 +12,4 @@
 - `media/`: real screen captures of the live link, owned by the capture session. The root README embeds `media/hero_phone.png`, `media/audit_row_phone.png` and `media/flow.gif`.
 - `../LICENSE`: MIT, copyright 2026 Mohamad Yazan Sadoun.
 
-Placeholders still open across these files: `[REPO_URL]`, `[VIDEO_URL]`, `[BLOG_URL]`.
+Placeholders still open across these files: `https://github.com/Yazan-O/fairbill`, `[VIDEO_URL]`, `[BLOG_URL]`.

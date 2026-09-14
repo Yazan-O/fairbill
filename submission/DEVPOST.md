@@ -132,7 +132,7 @@ python, strands-agents, strands-evals, amazon-bedrock, amazon-bedrock-agentcore,
 ## Links
 
 - Live demo: https://waixxctuxe5ojzlndpci5wvpqi0bixad.lambda-url.us-east-1.on.aws/
-- Repository: `[REPO_URL]`
+- Repository: `https://github.com/Yazan-O/fairbill`
 - Video: `[VIDEO_URL]`
 - Blog post: `[BLOG_URL]`
 
@@ -140,7 +140,7 @@ python, strands-agents, strands-evals, amazon-bedrock, amazon-bedrock-agentcore,
 
 ## Notes for the submitter
 
-1. `[REPO_URL]`, `[VIDEO_URL]` and `[BLOG_URL]` are placeholders; the live URL is filled in.
+1. `https://github.com/Yazan-O/fairbill`, `[VIDEO_URL]` and `[BLOG_URL]` are placeholders; the live URL is filled in.
 2. The live URL must be re-checked from a phone on cellular before the video is recorded.
 3. The only letter-quality number is the 1.00 mean from `evals/BENCH.md` (2026-09-14); update it if the bench is re-run.
 4. No market-size figure appears anywhere. Keep it that way.

@@ -133,7 +133,7 @@ Zero false flags includes zero on the clean bill. That case is in the demo on pu
 - No Surprises Act notice and consent: [45 CFR 149.420](https://www.ecfr.gov/current/title-45/part-149/section-149.420)
 - CMS patient-provider dispute guidance, including the $400 threshold and the 120-day window: https://www.cms.gov/medical-bill-rights/help/dispute-a-bill
 - CMS machine-readable file templates and data dictionary: https://github.com/CMSgov/hospital-price-transparency
-- Fairbill source code, MIT licensed: [REPO_URL]
+- Fairbill source code, MIT licensed: https://github.com/Yazan-O/fairbill
 - Norman Regional Health System standard charges, fetched 2026-09-13: https://www.normanregional.com/documents/PFS/736048282_norman-regional-health-system_standardcharges.csv
 - "41% of adults currently have some debt caused by medical or dental bills": [KFF Health Care Debt Survey](https://www.kff.org/health-costs/kff-health-care-debt-survey/), fielded February to March 2022, published 2022-06-16
 
